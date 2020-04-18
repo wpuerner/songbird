@@ -4,22 +4,17 @@ import 'package:songassociation/screens/end/end.dart';
 
 class PlayScreen extends StatefulWidget {
 
-  PlayScreen({Key key, this.initialTime}) : super(key: key);
-
-  int initialTime;
+  PlayScreen({Key key}) : super(key: key);
 
   @override
-  _PlayScreenState createState() => _PlayScreenState(initialTime);
+  _PlayScreenState createState() => _PlayScreenState();
 }
 
 class _PlayScreenState extends State<PlayScreen> {
-  _PlayScreenState(int initialTime) {
-    this._time = initialTime;
+  _PlayScreenState() {
     WordController().initialize();
     this._word = WordController().getNextWord();
   }
-
-  int _time;
 
   String _word;
 

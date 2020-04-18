@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import 'num_picker.dart';
-import '../play/play.dart';
-
 import 'package:songassociation/controller/word_controller.dart';
+import 'package:songassociation/model/num_picker_value.dart';
+
+import '../play/play.dart';
+import 'num_picker.dart';
 
 class SongAssociationHomePage extends StatefulWidget {
   SongAssociationHomePage({Key key}) : super(key: key);
@@ -12,6 +13,10 @@ class SongAssociationHomePage extends StatefulWidget {
 }
 
 class _SongAssociationHomePageState extends State<SongAssociationHomePage> {
+
+  NumPickerValue _timePickerValue = new NumPickerValue(value: 5);
+
+  NumPickerValue _wordCountPickerValue = new NumPickerValue(value: 5);
 
   @override
   Widget build(BuildContext context) {
@@ -29,19 +34,19 @@ class _SongAssociationHomePageState extends State<SongAssociationHomePage> {
                     "Time Limit",
                   style: TextStyle(fontSize: 24),
                 ),
-                NumPicker(initialState: 10),
+                NumPicker(numPickerValue: _wordCountPickerValue),
                 Text(
                     "Rounds",
                   style: TextStyle(fontSize: 24),
                 ),
-                NumPicker(initialState: 10),
+                NumPicker(numPickerValue: _wordCountPickerValue),
                 RaisedButton(
                   onPressed: () {
-                    WordController().wordCountPerRound = 5; //TODO get this value from the numpicker
-                    WordController().wordDurationInSeconds = 5;
+                    WordController().wordDurationInSeconds = _timePickerValue.value;
+                    WordController().wordCountPerRound = _wordCountPickerValue.value;
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => PlayScreen(initialTime: 5)) //TODO get these values from the numpickers
+                      MaterialPageRoute(builder: (context) => PlayScreen())
                     );
                   },
                   child: Text("Start Game!"),

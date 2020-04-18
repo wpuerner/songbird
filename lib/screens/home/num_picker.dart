@@ -1,28 +1,30 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
+import 'package:songassociation/model/num_picker_value.dart';
 
 class NumPicker extends StatefulWidget {
-  NumPicker({Key key, this.initialState}) : super(key: key);
+  NumPicker({Key key, this.numPickerValue}) : super(key: key);
 
-  final int initialState;
+  final NumPickerValue numPickerValue;
 
   @override
-  _NumPickerState createState() => _NumPickerState(this.initialState);
+  _NumPickerState createState() => _NumPickerState(this.numPickerValue);
 }
 
 class _NumPickerState extends State<NumPicker> {
-  _NumPickerState(int value) { this._value = value; }
-  int _value;
+  _NumPickerState(NumPickerValue numPickerValue) { this.numPickerValue = numPickerValue; }
+
+  NumPickerValue numPickerValue;
 
   void _decrementNumValue() {
     setState(() {
-      if (_value > 0) { _value--; }
+      if (numPickerValue.value > 0) { numPickerValue.value--; }
     });
   }
 
   _incrementNumValue() {
     setState(() {
-      _value++;
+      numPickerValue.value++;
     });
   }
 
@@ -35,7 +37,7 @@ class _NumPickerState extends State<NumPicker> {
           onPressed: _decrementNumValue,
           child: Icon(Icons.arrow_back),
         ),
-        Text('$_value'),
+        Text(numPickerValue.value.toString()),
         RaisedButton(
             onPressed: _incrementNumValue,
             child: Icon(Icons.arrow_forward),

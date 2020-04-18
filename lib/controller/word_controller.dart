@@ -1,5 +1,4 @@
 import 'dart:collection';
-import 'dart:convert';
 
 import 'package:global_configuration/global_configuration.dart';
 
@@ -48,7 +47,6 @@ class WordController {
   }
 
   String getNextWord() {
-    //pop the queue to get the next word
     return wordQueue.removeFirst().word;
   }
 

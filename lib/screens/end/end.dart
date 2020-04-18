@@ -23,7 +23,7 @@ class EndScreen extends StatelessWidget {
                 onPressed: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => PlayScreen(initialTime: 5))
+                    MaterialPageRoute(builder: (context) => PlayScreen())
                   );
                 }
               ),
