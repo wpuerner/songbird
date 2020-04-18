@@ -20,14 +20,21 @@ class WordController {
 
   Queue<Word> wordQueue;
 
-  void initialize(int numWords) {
+  int numberCorrect;
+
+  int wordDurationInSeconds;
+
+  int wordCountPerRound;
+
+  void initialize() {
     //get configuration from file and generate word list and queue
     final dynamicGlobalWordList = GlobalConfiguration().get("words");
     final globalWordList = dynamicGlobalWordList.map((i) => Word.fromJson(i)).toList();
 
     int _m = 0;
+    words.clear();
 
-    for (int _i = 0; _i < numWords; _i++) {
+    for (int _i = 0; _i < wordCountPerRound; _i++) {
       if (_m >= globalWordList.length) {
         _m = 0;
       }
@@ -36,6 +43,8 @@ class WordController {
     }
 
     wordQueue = Queue.of(words);
+
+    numberCorrect = 0;
   }
 
   String getNextWord() {
@@ -46,5 +55,4 @@ class WordController {
   bool isNextWordAvailable() {
     return wordQueue.isNotEmpty;
   }
-
 }

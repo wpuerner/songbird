@@ -37,7 +37,8 @@ class _SongAssociationHomePageState extends State<SongAssociationHomePage> {
                 NumPicker(initialState: 10),
                 RaisedButton(
                   onPressed: () {
-                    WordController().initialize(5); //TODO get this value from the numpicker
+                    WordController().wordCountPerRound = 5; //TODO get this value from the numpicker
+                    WordController().wordDurationInSeconds = 5;
                     Navigator.push(
                       context,
                       MaterialPageRoute(builder: (context) => PlayScreen(initialTime: 5)) //TODO get these values from the numpickers

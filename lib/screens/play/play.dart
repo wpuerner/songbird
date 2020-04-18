@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:songassociation/controller/word_controller.dart';
+import 'package:songassociation/screens/end/end.dart';
 
 class PlayScreen extends StatefulWidget {
 
@@ -14,6 +15,7 @@ class PlayScreen extends StatefulWidget {
 class _PlayScreenState extends State<PlayScreen> {
   _PlayScreenState(int initialTime) {
     this._time = initialTime;
+    WordController().initialize();
     this._word = WordController().getNextWord();
   }
 
@@ -40,13 +42,14 @@ class _PlayScreenState extends State<PlayScreen> {
                       Text(_word),
                       RaisedButton(
                         onPressed: () {
+                          WordController().numberCorrect++;
                           if(WordController().isNextWordAvailable()) {
                             _advancePlayScreen();
                           } else {
                             Navigator.push(
                               context,
-                              MaterialPageRoute(builder: (context) => EndScreen()) //TODO implement this first
-                            )
+                              MaterialPageRoute(builder: (context) => EndScreen())
+                            );
                           }
                         },
                         child: Text("I got it!")
