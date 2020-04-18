@@ -18,10 +18,19 @@ class _PlayScreenState extends State<PlayScreen> {
 
   String _word;
 
-  void _advancePlayScreen() {
-    setState(() {
-      _word = WordController().getNextWord();
-    });
+  void _advancePlayScreenWithResult(bool gotIt) {
+    if(WordController().isNextWordAvailable()) {
+      setState(() {
+        WordController().submitWordResult(gotIt);
+        _word = WordController().getNextWord();
+      });
+    } else {
+      WordController().submitWordResult(gotIt);
+      Navigator.push(
+          context,
+          MaterialPageRoute(builder: (context) => EndScreen())
+      );
+    }
   }
 
   @override
@@ -37,15 +46,7 @@ class _PlayScreenState extends State<PlayScreen> {
                       Text(_word),
                       RaisedButton(
                         onPressed: () {
-                          WordController().numberCorrect++;
-                          if(WordController().isNextWordAvailable()) {
-                            _advancePlayScreen();
-                          } else {
-                            Navigator.push(
-                              context,
-                              MaterialPageRoute(builder: (context) => EndScreen())
-                            );
-                          }
+                          _advancePlayScreenWithResult(true);
                         },
                         child: Text("I got it!")
                       )
