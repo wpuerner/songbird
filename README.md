@@ -1,10 +1,13 @@
-# songassociation
+# Song Bird
 
-Song Association
+An application to play the Song Association game by [ELLE Magazine](https://www.youtube.com/user/ElleMagazine/featured) with your friends.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+#### Download Android Studio (optional)
+Follow [this link](https://developer.android.com/studio) and click download andriod studio. Follow instructions in download zip for installing on your platform.
+
+#### Get Started With Flutter
 
 A few resources to get you started if this is your first Flutter project:
 
