@@ -15,9 +15,12 @@ class WordController {
 
   WordController._internal();
 
-  List<Word> words = List<Word>();
+  Queue<Word> unplayedWordsQueue;
 
-  Queue<Word> wordQueue;
+  Queue<Word> playedWordsQueue;
+
+  Queue<bool> wordResultsQueue;
+
 
   int numberCorrect;
 
@@ -25,32 +28,39 @@ class WordController {
 
   int wordCountPerRound;
 
+  Word _currentWord;
+
   void initialize() {
     //get configuration from file and generate word list and queue
     final dynamicGlobalWordList = GlobalConfiguration().get("words");
     final globalWordList = dynamicGlobalWordList.map((i) => Word.fromJson(i)).toList();
 
     int _m = 0;
-    words.clear();
+    unplayedWordsQueue.clear();
+
 
     for (int _i = 0; _i < wordCountPerRound; _i++) {
       if (_m >= globalWordList.length) {
         _m = 0;
       }
-      words.add(globalWordList[_m]);
+      unplayedWordsQueue.add(globalWordList[_m]);
       _m++;
     }
-
-    wordQueue = Queue.of(words);
 
     numberCorrect = 0;
   }
 
   String getNextWord() {
-    return wordQueue.removeFirst().word;
+    _currentWord = unplayedWordsQueue.removeFirst();
+    return _currentWord.word;
+  }
+
+  void submitWordResult(bool gotIt) {
+    playedWordsQueue.add(_currentWord);
+    wordResultsQueue.add(gotIt);
   }
 
   bool isNextWordAvailable() {
-    return wordQueue.isNotEmpty;
+    return unplayedWordsQueue.isNotEmpty;
   }
 }
