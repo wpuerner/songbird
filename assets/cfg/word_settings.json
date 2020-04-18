@@ -1,0 +1,31 @@
+{
+  "words": [
+    {
+      "word": "dog",
+      "examples": [
+        {
+          "songName": "dog on a frog",
+          "artistName": "the dogs"
+        }
+      ]
+    },
+    {
+      "word": "cat",
+      "examples": [
+        {
+          "songName": "cat in a hat",
+          "artistName": "the cats"
+        }
+      ]
+    },
+    {
+      "word": "bird",
+      "examples": [
+        {
+          "songName": "bird is the word",
+          "artistName": "the birds"
+        }
+      ]
+    }
+  ]
+}
