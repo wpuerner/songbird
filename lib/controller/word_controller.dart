@@ -6,7 +6,18 @@ import '../model/word.dart';
 
 class WordController {
 
-  //singleton instance, with factory and constructor
+  int wordDurationInSeconds;
+
+  int wordCountPerRound;
+
+  Word _currentWord;
+
+  Queue<Word> unplayedWordsQueue;
+
+  Queue<Word> playedWordsQueue;
+
+  Queue<bool> wordResultsQueue;
+
   static final WordController _instance = WordController._internal();
 
   factory WordController() {
@@ -15,20 +26,6 @@ class WordController {
 
   WordController._internal();
 
-  Queue<Word> unplayedWordsQueue;
-
-  Queue<Word> playedWordsQueue;
-
-  Queue<bool> wordResultsQueue;
-
-
-  int numberCorrect;
-
-  int wordDurationInSeconds;
-
-  int wordCountPerRound;
-
-  Word _currentWord;
 
   void initialize() {
     //get configuration from file and generate word list and queue
@@ -38,7 +35,6 @@ class WordController {
     int _m = 0;
     unplayedWordsQueue.clear();
 
-
     for (int _i = 0; _i < wordCountPerRound; _i++) {
       if (_m >= globalWordList.length) {
         _m = 0;
@@ -46,8 +42,6 @@ class WordController {
       unplayedWordsQueue.add(globalWordList[_m]);
       _m++;
     }
-
-    numberCorrect = 0;
   }
 
   String getNextWord() {
