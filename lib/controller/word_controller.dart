@@ -28,10 +28,13 @@ class WordController {
 
 
   void initialize() {
-   final globalWordList = WordSettingsLoader().loadGlobalWordList();
+    final globalWordList = WordSettingsLoader().loadGlobalWordList();
+
+    unplayedWordsQueue.clear();
+    playedWordsQueue.clear();
+    wordResultsQueue.clear();
 
     int _m = 0;
-    unplayedWordsQueue.clear();
 
     for (int _i = 0; _i < wordCountPerRound; _i++) {
       if (_m >= globalWordList.length) {
