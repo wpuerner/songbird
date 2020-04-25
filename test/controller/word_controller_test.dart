@@ -59,6 +59,19 @@ void main() {
       expect(WordController().playedWordsQueue.length, equals(3));
       expect(WordController().wordResultsQueue.length, equals(3));
     });
+
+    test('Queue order is maintained for results', () {
+      WordController().wordCountPerRound = 5;
+      WordController().initialize();
+      var prescribedResults = [true, false, true, false, false];
+      for(bool result in prescribedResults) {
+        WordController().getNextWord();
+        WordController().submitWordResult(result);
+      }
+      for(bool result in prescribedResults) {
+        expect(WordController().wordResultsQueue.removeFirst(), equals(result));
+      }
+    });
   });
 
   group('Get next word tests', () {
