@@ -1,6 +1,6 @@
 import 'dart:collection';
 
-import 'package:global_configuration/global_configuration.dart';
+import 'package:songassociation/controller/word_settings_loader.dart';
 
 import '../model/word.dart';
 
@@ -12,11 +12,11 @@ class WordController {
 
   Word _currentWord;
 
-  Queue<Word> unplayedWordsQueue;
+  Queue<Word> unplayedWordsQueue = Queue();
 
-  Queue<Word> playedWordsQueue;
+  Queue<Word> playedWordsQueue = Queue();
 
-  Queue<bool> wordResultsQueue;
+  Queue<bool> wordResultsQueue = Queue();
 
   static final WordController _instance = WordController._internal();
 
@@ -28,9 +28,7 @@ class WordController {
 
 
   void initialize() {
-    //get configuration from file and generate word list and queue
-    final dynamicGlobalWordList = GlobalConfiguration().get("words");
-    final globalWordList = dynamicGlobalWordList.map((i) => Word.fromJson(i)).toList();
+   final globalWordList = WordSettingsLoader().loadGlobalWordList();
 
     int _m = 0;
     unplayedWordsQueue.clear();

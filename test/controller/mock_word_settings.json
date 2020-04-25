@@ -1,0 +1,13 @@
+{
+  "words": [
+    {
+      "word": "mockWord",
+      "examples": [
+        {
+          "songName": "mockSongName",
+          "artistName": "mockArtistName"
+        }
+      ]
+    }
+  ]
+}
