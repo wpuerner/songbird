@@ -10,7 +10,7 @@ const MOCK_ARTIST_NAME = "mockArtistName";
 void main() {
 
   setUp(() {
-    dynamic mockWord = Word();
+    Word mockWord = Word();
     mockWord.word = MOCK_WORD;
     mockWord.examples = List<Example>();
     mockWord.examples.add(Example());
