@@ -58,4 +58,10 @@ class WordController {
   bool isNextWordAvailable() {
     return unplayedWordsQueue.isNotEmpty;
   }
+
+  int getNumberCorrectForRound() {
+    List<bool> trueResults = wordResultsQueue.toList();
+    trueResults.retainWhere((result) => result == true);
+    return trueResults.length;
+  }
 }

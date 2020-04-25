@@ -96,5 +96,19 @@ void main() {
       expect(WordController().isNextWordAvailable(), equals(false));
     });
   });
+
+  group('Results tests', () {
+    test('Calculate number correct for round', () {
+      WordController().wordCountPerRound = 5;
+      WordController().initialize();
+      var prescribedResults = [true, false, true, false, false];
+      for(bool result in prescribedResults) {
+        WordController().getNextWord();
+        WordController().submitWordResult(result);
+      }
+      expect(WordController().getNumberCorrectForRound(), equals(2));
+      expect(WordController().wordResultsQueue.length, equals(5));
+    });
+  });
 }
 
