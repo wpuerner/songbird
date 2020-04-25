@@ -19,13 +19,12 @@ class _PlayScreenState extends State<PlayScreen> {
   String _word;
 
   void _advancePlayScreenWithResult(bool gotIt) {
+    WordController().submitWordResult(gotIt);
     if(WordController().isNextWordAvailable()) {
       setState(() {
-        WordController().submitWordResult(gotIt);
         _word = WordController().getNextWord();
       });
     } else {
-      WordController().submitWordResult(gotIt);
       Navigator.push(
           context,
           MaterialPageRoute(builder: (context) => EndScreen())
