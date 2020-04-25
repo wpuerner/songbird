@@ -5,7 +5,7 @@ import '../model/word.dart';
 
 class WordSettingsLoader {
 
-  List<Word> globalWordList;
+  var globalWordList;
 
   static final WordSettingsLoader _instance = WordSettingsLoader._internal();
 
@@ -15,7 +15,7 @@ class WordSettingsLoader {
 
   WordSettingsLoader._internal();
 
-  List<Word> loadGlobalWordList() {
+  List<dynamic> loadGlobalWordList() {
     if(null == globalWordList) {
       final dynamicGlobalWordList = GlobalConfiguration().get("words");
       globalWordList = dynamicGlobalWordList.map((i) => Word.fromJson(i)).toList();
