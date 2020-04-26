@@ -2,6 +2,8 @@ import 'package:flutter/cupertino.dart';
 import 'package:songassociation/model/word.dart';
 import 'package:flutter/material.dart';
 
+import 'package:songassociation/screens/suggestion/suggestion.dart';
+
 
 class WordResultBox extends StatelessWidget {
 
@@ -18,8 +20,11 @@ class WordResultBox extends StatelessWidget {
         children: <Widget>[
           Text(word.word),
           RaisedButton(
-            onPressed: () => {
-              // TODO go to suggestion screen for this word
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => SuggestionScreen(word: this.word))
+              );
             },
             child: Icon(Icons.arrow_forward)
           )
