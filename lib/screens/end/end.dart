@@ -16,8 +16,12 @@ class EndScreen extends StatelessWidget {
       onWillPop: () async => false,
       child: Material(
         child: Center(
-          child: ListView(
-            children: _buildChildWidgets(context)
+          child: Directionality(
+            textDirection: TextDirection.ltr,
+            child: ListView(
+              children: _buildChildWidgets(context),
+              scrollDirection: Axis.vertical
+            )
           )
         )
       )
