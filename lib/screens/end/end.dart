@@ -31,32 +31,38 @@ class EndScreen extends StatelessWidget {
   List<Widget> _buildChildWidgets(BuildContext context) {
     List<Widget> widgets = List();
     widgets.add(
-        Text("You got " + WordController().getNumberCorrectForRound().toString() + " correct!")
+        Text("You got " +
+            WordController().getNumberCorrectForRound().toString() +
+            " correct!")
     );
 
     widgets.addAll(_constructWordResultBoxList());
 
-    widgets.add(RaisedButton(
-        child: Text("Play again"),
-        onPressed: () {
-          Navigator.push(
-              context,
-              MaterialPageRoute(builder: (context) => PlayScreen())
-          );
-        }
-      )
+    widgets.add(
+        RaisedButton(
+            key: Key("restartButton"),
+            child: Text("Play again"),
+            onPressed: () {
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => PlayScreen())
+              );
+            }
+        )
     );
 
     widgets.add(
-      RaisedButton(
-          child: Text("Return to home"),
-          onPressed: () {
-            Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => SongAssociationHomePage())
-            );
-          }
-      )
+        RaisedButton(
+            key: Key("homeButton"),
+            child: Text("Return to home"),
+            onPressed: () {
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => SongAssociationHomePage())
+              );
+            }
+        )
     );
 
     return widgets;
