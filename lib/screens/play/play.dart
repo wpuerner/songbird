@@ -26,17 +26,15 @@ class _PlayScreenState extends State<PlayScreen> {
     this._word = WordController().getNextWord();
     this._secondsPerWord = WordController().wordDurationInSeconds;
     this._currentSeconds = this._secondsPerWord;
-    _startTimer();
   }
 
   void _advancePlayScreenWithResult(bool gotIt) {
     WordController().submitWordResult(gotIt);
-    if(WordController().isNextWordAvailable()) {
-      setState(() {
-        _word = WordController().getNextWord();
-        _currentSeconds = _secondsPerWord;
-        _startTimer();
-      });
+    if (WordController().isNextWordAvailable()) {
+      Navigator.push(
+          context,
+          MaterialPageRoute(builder: (context) => PlayScreen())
+      );
     } else {
       Navigator.push(
           context,
@@ -45,17 +43,18 @@ class _PlayScreenState extends State<PlayScreen> {
     }
   }
 
-  void _startTimer() {
+  @override
+  void initState() {
     _playTimer = new Timer.periodic(Duration(seconds: 1), (timer) {
       if(_currentSeconds > 0) {
         setState(() {
           _currentSeconds--;
         });
       } else {
-        timer.cancel();
         _advancePlayScreenWithResult(false);
       }
     });
+    super.initState();
   }
 
   @override
@@ -79,6 +78,7 @@ class _PlayScreenState extends State<PlayScreen> {
                           Text("$_currentSeconds"),
                           Text(_word),
                           RaisedButton(
+                              key: Key("gotItButton"),
                               onPressed: () {
                                 _advancePlayScreenWithResult(true);
                               },
