@@ -20,8 +20,9 @@ class _PlayScreenState extends State<PlayScreen> {
 
   int _currentSeconds;
 
+  Timer _playTimer;
+
   _PlayScreenState() {
-    WordController().initialize();
     this._word = WordController().getNextWord();
     this._secondsPerWord = WordController().wordDurationInSeconds;
     this._currentSeconds = this._secondsPerWord;
@@ -44,8 +45,8 @@ class _PlayScreenState extends State<PlayScreen> {
     }
   }
 
-  Timer _startTimer() {
-    return new Timer.periodic(Duration(seconds: 1), (timer) {
+  void _startTimer() {
+    _playTimer = new Timer.periodic(Duration(seconds: 1), (timer) {
       if(_currentSeconds > 0) {
         setState(() {
           _currentSeconds--;
@@ -58,24 +59,33 @@ class _PlayScreenState extends State<PlayScreen> {
   }
 
   @override
+  void dispose() {
+    _playTimer.cancel();
+    super.dispose();
+  }
+
+  @override
   Widget build(BuildContext context) {
     return WillPopScope(
         onWillPop: () async => false,
         child: Material(
-            child: Center(
-                child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    children: <Widget>[
-                      Text("$_currentSeconds"),
-                      Text(_word),
-                      RaisedButton(
-                        onPressed: () {
-                          _advancePlayScreenWithResult(true);
-                        },
-                        child: Text("I got it!")
-                      )
-                    ]))
+            child: Directionality(
+                textDirection: TextDirection.ltr,
+                child: Center(
+                    child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        children: <Widget>[
+                          Text("$_currentSeconds"),
+                          Text(_word),
+                          RaisedButton(
+                              onPressed: () {
+                                _advancePlayScreenWithResult(true);
+                              },
+                              child: Text("I got it!")
+                          )
+                        ]))
+            )
         )
     );
   }
