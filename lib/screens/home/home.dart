@@ -44,6 +44,7 @@ class _SongAssociationHomePageState extends State<SongAssociationHomePage> {
                   onPressed: () {
                     WordController().wordDurationInSeconds = _timePickerValue.value;
                     WordController().wordCountPerRound = _wordCountPickerValue.value;
+                    WordController().initialize();
                     Navigator.push(
                       context,
                       MaterialPageRoute(builder: (context) => PlayScreen())
