@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 import 'package:songassociation/controller/word_controller.dart';
 import 'package:songassociation/screens/end/end.dart';
@@ -11,18 +13,28 @@ class PlayScreen extends StatefulWidget {
 }
 
 class _PlayScreenState extends State<PlayScreen> {
+
+  String _word;
+
+  int _secondsPerWord;
+
+  int _currentSeconds;
+
   _PlayScreenState() {
     WordController().initialize();
     this._word = WordController().getNextWord();
+    this._secondsPerWord = WordController().wordDurationInSeconds;
+    this._currentSeconds = this._secondsPerWord;
+    _startTimer();
   }
-
-  String _word;
 
   void _advancePlayScreenWithResult(bool gotIt) {
     WordController().submitWordResult(gotIt);
     if(WordController().isNextWordAvailable()) {
       setState(() {
         _word = WordController().getNextWord();
+        _currentSeconds = _secondsPerWord;
+        _startTimer();
       });
     } else {
       Navigator.push(
@@ -30,6 +42,19 @@ class _PlayScreenState extends State<PlayScreen> {
           MaterialPageRoute(builder: (context) => EndScreen())
       );
     }
+  }
+
+  Timer _startTimer() {
+    return new Timer.periodic(Duration(seconds: 1), (timer) {
+      if(_currentSeconds > 0) {
+        setState(() {
+          _currentSeconds--;
+        });
+      } else {
+        timer.cancel();
+        _advancePlayScreenWithResult(false);
+      }
+    });
   }
 
   @override
@@ -42,6 +67,7 @@ class _PlayScreenState extends State<PlayScreen> {
                     mainAxisAlignment: MainAxisAlignment.center,
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: <Widget>[
+                      Text("$_currentSeconds"),
                       Text(_word),
                       RaisedButton(
                         onPressed: () {
