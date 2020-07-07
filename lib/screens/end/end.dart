@@ -10,30 +10,40 @@ class EndScreen extends StatelessWidget {
 
   EndScreen({Key key}) : super(key: key);
 
+  _getTitleText() {
+    return "You got " +
+        WordController().getNumberCorrectForRound().toString() +
+        "/" + WordController().wordCountPerRound.toString() +
+        " correct!";
+  }
+
   @override
   Widget build(BuildContext context) {
     return WillPopScope(
-      onWillPop: () async => false,
-      child: Material(
-        child: Center(
-          child: Directionality(
-            textDirection: TextDirection.ltr,
-            child: ListView(
-              children: _buildChildWidgets(context),
-              scrollDirection: Axis.vertical
-            )
-          )
-        )
-      )
+        onWillPop: () async => false,
+        child: Material(
+            child: Center(
+                child: Directionality(
+                    textDirection: TextDirection.ltr,
+                    child: ListView(
+                        children: _buildChildWidgets(context),
+                        scrollDirection: Axis.vertical
+                    )
+                )
+            ))
     );
   }
 
   List<Widget> _buildChildWidgets(BuildContext context) {
     List<Widget> widgets = List();
     widgets.add(
-        Text("You got " +
-            WordController().getNumberCorrectForRound().toString() +
-            " correct!")
+        Text(
+            _getTitleText(),
+            textAlign: TextAlign.center,
+            style: TextStyle(
+              fontSize: 30
+            )
+        )
     );
 
     widgets.addAll(_constructWordResultBoxList());
