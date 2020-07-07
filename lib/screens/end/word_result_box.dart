@@ -21,7 +21,12 @@ class WordResultBox extends StatelessWidget {
             child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
-                  Spacer(),
+                  Expanded(
+                    child: Align(
+                      alignment: Alignment.centerLeft,
+                      child: Icon(isGotIt ? Icons.check : Icons.clear)
+                    )
+                  ),
                   Text(
                       word.word,
                       textAlign: TextAlign.center,
