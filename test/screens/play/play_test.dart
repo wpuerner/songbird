@@ -17,8 +17,6 @@ void main() {
 
   NavigatorObserver mockObserver;
 
-  PlayScreen subject = new PlayScreen();
-
   setUp(() {
     mockObserver = MockNavigatorObserver();
     TestUtils.initializeWordController(2, DEFAULT_DURATION);
