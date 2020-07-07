@@ -18,13 +18,21 @@ class WordResultBox extends StatelessWidget {
     return Material(
         child: Directionality(
             textDirection: TextDirection.ltr,
-            child: Container(
-                padding: const EdgeInsets.symmetric(horizontal: 20.0),
-                child: Row(
-                    children: <Widget>[
-                      Text(word.word),
-                      Spacer(),
-                      RaisedButton(
+            child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: <Widget>[
+                  Spacer(),
+                  Text(
+                      word.word,
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                          fontSize: 20
+                      )
+                  ),
+                  Expanded(
+                    child: Align(
+                      alignment: Alignment.centerRight,
+                      child:  IconButton(
                           onPressed: () {
                             Navigator.push(
                                 context,
@@ -32,10 +40,11 @@ class WordResultBox extends StatelessWidget {
                                     SuggestionScreen(word: this.word))
                             );
                           },
-                          child: Icon(Icons.arrow_forward)
+                          icon: Icon(Icons.add_box)
                       )
-                    ]
-                )
+                    )
+                  )
+                ]
             )
         )
     );
