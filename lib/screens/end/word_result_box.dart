@@ -16,20 +16,28 @@ class WordResultBox extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Material(
-      child: Row(
-        children: <Widget>[
-          Text(word.word),
-          RaisedButton(
-            onPressed: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => SuggestionScreen(word: this.word))
-              );
-            },
-            child: Icon(Icons.arrow_forward)
-          )
-        ]
-      )
+        child: Directionality(
+            textDirection: TextDirection.ltr,
+            child: Container(
+                padding: const EdgeInsets.symmetric(horizontal: 20.0),
+                child: Row(
+                    children: <Widget>[
+                      Text(word.word),
+                      Spacer(),
+                      RaisedButton(
+                          onPressed: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(builder: (context) =>
+                                    SuggestionScreen(word: this.word))
+                            );
+                          },
+                          child: Icon(Icons.arrow_forward)
+                      )
+                    ]
+                )
+            )
+        )
     );
   }
 
