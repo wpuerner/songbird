@@ -1,6 +1,5 @@
 import 'dart:async';
 
-import 'package:fake_async/fake_async.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mockito/mockito.dart';
@@ -13,13 +12,16 @@ import '../../test_utils.dart';
 class MockNavigatorObserver extends Mock implements NavigatorObserver {}
 
 void main() {
+
+  const int DEFAULT_DURATION = 2;
+
   NavigatorObserver mockObserver;
 
   PlayScreen subject = new PlayScreen();
 
   setUp(() {
     mockObserver = MockNavigatorObserver();
-    TestUtils.initializeWordController(2, 2);
+    TestUtils.initializeWordController(2, DEFAULT_DURATION);
   });
 
   Future _pumpPlayScreen(WidgetTester tester) async {
@@ -45,7 +47,7 @@ void main() {
     testWidgets('Time running out add the correct result',
         (WidgetTester tester) async {
       await _pumpPlayScreen(tester);
-      await tester.pump(new Duration(seconds: 3));
+      await tester.pump(new Duration(seconds: DEFAULT_DURATION + 1));
       expect(WordController().wordResultsQueue.length, equals(1));
       expect(WordController().wordResultsQueue.removeFirst(), equals(false));
     });
@@ -63,7 +65,7 @@ void main() {
 
     testWidgets('When no words are available, route to end screen',
         (WidgetTester tester) async {
-      TestUtils.initializeWordController(1, 1);
+      TestUtils.initializeWordController(1, DEFAULT_DURATION);
       await _pumpPlayScreen(tester);
       await _tapGotItButton(tester);
 
