@@ -31,12 +31,12 @@ class _PlayScreenState extends State<PlayScreen> {
   void _advancePlayScreenWithResult(bool gotIt) {
     WordController().submitWordResult(gotIt);
     if (WordController().isNextWordAvailable()) {
-      Navigator.push(
+      Navigator.pushReplacement(
           context,
           MaterialPageRoute(builder: (context) => PlayScreen())
       );
     } else {
-      Navigator.push(
+      Navigator.pushReplacement(
           context,
           MaterialPageRoute(builder: (context) => EndScreen())
       );
