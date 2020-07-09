@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:songassociation/controller/word_controller.dart';
 import 'package:songassociation/screens/home/home.dart';
 import 'package:songassociation/screens/play/play.dart';
 
@@ -13,6 +14,7 @@ class NavigationButtonRow extends StatelessWidget {
           key: Key("restartButton"),
           child: Text("Play again"),
           onPressed: () {
+            WordController().initialize();
             Navigator.push(
               context,
               MaterialPageRoute(builder: (context) => PlayScreen())
