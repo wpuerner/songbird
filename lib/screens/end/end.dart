@@ -1,10 +1,11 @@
+import 'dart:collection';
+
 import 'package:flutter/material.dart';
 import 'package:songassociation/controller/word_controller.dart';
-import 'package:songassociation/screens/end/word_result_box.dart';
-import 'package:songassociation/screens/home/home.dart';
-import 'package:songassociation/screens/play/play.dart';
 import 'package:songassociation/model/word.dart';
-import 'dart:collection';
+import 'package:songassociation/screens/end/word_result_box.dart';
+
+import 'navigation_button_row.dart';
 
 class EndScreen extends StatelessWidget {
 
@@ -20,62 +21,37 @@ class EndScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return WillPopScope(
-        onWillPop: () async => false,
-        child: Material(
-            child: Center(
-                child: Directionality(
-                    textDirection: TextDirection.ltr,
-                    child: ListView(
-                        children: _buildChildWidgets(context),
-                        scrollDirection: Axis.vertical
+      onWillPop: () async => false,
+      child: Material(
+        child: Center(
+          child: Directionality(
+            textDirection: TextDirection.ltr,
+            child: Padding(
+              padding: EdgeInsets.symmetric(vertical: 20.0),
+              child:  Column(
+                children: <Widget>[
+                  Text(
+                    _getTitleText(),
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                      fontSize: 30
                     )
-                )
-            ))
-    );
-  }
-
-  List<Widget> _buildChildWidgets(BuildContext context) {
-    List<Widget> widgets = List();
-    widgets.add(
-        Text(
-            _getTitleText(),
-            textAlign: TextAlign.center,
-            style: TextStyle(
-              fontSize: 30
+                  ),
+                  Expanded(
+                    child: ListView(
+                      scrollDirection: Axis.vertical,
+                      children: _constructWordResultBoxList()
+                    )
+                  ),
+                  NavigationButtonRow()
+                ]
+              )
             )
+           
+          )
         )
+      )
     );
-
-    widgets.addAll(_constructWordResultBoxList());
-
-    widgets.add(
-        RaisedButton(
-            key: Key("restartButton"),
-            child: Text("Play again"),
-            onPressed: () {
-              Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => PlayScreen())
-              );
-            }
-        )
-    );
-
-    widgets.add(
-        RaisedButton(
-            key: Key("homeButton"),
-            child: Text("Return to home"),
-            onPressed: () {
-              Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                      builder: (context) => SongAssociationHomePage())
-              );
-            }
-        )
-    );
-
-    return widgets;
   }
 
   List<Widget> _constructWordResultBoxList() {
