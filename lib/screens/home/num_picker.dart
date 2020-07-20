@@ -33,14 +33,17 @@ class _NumPickerState extends State<NumPicker> {
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: <Widget>[
-        RaisedButton(
+        FlatButton(
           onPressed: _decrementNumValue,
-          child: Icon(Icons.arrow_back),
+          child: Text("-", style: TextStyle(fontSize: 64)),
         ),
-        Text(numPickerValue.value.toString()),
-        RaisedButton(
+        Text(
+          numPickerValue.value.toString(),
+          style: TextStyle(fontSize: 20)
+        ),
+        FlatButton(
             onPressed: _incrementNumValue,
-            child: Icon(Icons.arrow_forward),
+            child: Text("+", style: TextStyle(fontSize: 64)),
         ),
       ],
     );

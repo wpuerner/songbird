@@ -14,9 +14,9 @@ class SongAssociationHomePage extends StatefulWidget {
 
 class _SongAssociationHomePageState extends State<SongAssociationHomePage> {
 
-  NumPickerValue _timePickerValue = new NumPickerValue(value: 5);
+  NumPickerValue _timePickerValue = new NumPickerValue(value: 10);
 
-  NumPickerValue _wordCountPickerValue = new NumPickerValue(value: 5);
+  NumPickerValue _wordCountPickerValue = new NumPickerValue(value: 10);
 
   @override
   Widget build(BuildContext context) {
@@ -31,15 +31,15 @@ class _SongAssociationHomePageState extends State<SongAssociationHomePage> {
                   style: TextStyle(fontSize: 24),
                 ),
                 Text(
-                    "Time Limit",
+                    "Number of Words",
                   style: TextStyle(fontSize: 24),
                 ),
                 NumPicker(numPickerValue: _wordCountPickerValue),
                 Text(
-                    "Rounds",
+                    "Seconds per Word",
                   style: TextStyle(fontSize: 24),
                 ),
-                NumPicker(numPickerValue: _wordCountPickerValue),
+                NumPicker(numPickerValue: _timePickerValue),
                 RaisedButton(
                   onPressed: () {
                     WordController().wordDurationInSeconds = _timePickerValue.value;
