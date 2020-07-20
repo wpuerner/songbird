@@ -13,7 +13,7 @@ class Application extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Song Association',
+      title: 'Songbird',
       theme: ThemeData(
         // This is the theme of your application.
         //
@@ -25,6 +25,7 @@ class Application extends StatelessWidget {
         // Notice that the counter didn't reset back to zero; the application
         // is not restarted.
         primarySwatch: Colors.red,
+        fontFamily: 'PlayfairDisplay'
       ),
       home: SongAssociationHomePage(),
     );
