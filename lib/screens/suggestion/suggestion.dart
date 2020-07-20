@@ -10,9 +10,11 @@ class SuggestionScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Material(
-      child: Column(
-        children: _constructContentWidgetList()
-      )
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: _constructContentWidgetList()
+        )
     );
 
   }
@@ -20,7 +22,12 @@ class SuggestionScreen extends StatelessWidget {
   List<Widget> _constructContentWidgetList() {
     List<Widget> contentWidgetList = List();
 
-    contentWidgetList.add(Text(word.word));
+    contentWidgetList.add(
+      Text(
+        word.word,
+        style: TextStyle(fontSize: 30)
+      )
+    );
     contentWidgetList.addAll(_constructExampleWidgetList());
 
     return contentWidgetList;
@@ -31,11 +38,46 @@ class SuggestionScreen extends StatelessWidget {
 
     for(Example example in word.examples) {
       exampleWidgetList.add(
-        Text(example.songName + " by " + example.artistName)
+        ExampleSongAndArtist(example)
       );
     }
 
     return exampleWidgetList;
   }
+
+}
+
+class ExampleSongAndArtist extends StatelessWidget {
+
+  ExampleSongAndArtist(this._example);
+
+  final Example _example;
+
+  @override
+  Widget build(BuildContext context) {
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: <Widget> [
+        Text(
+          _example.songName,
+          key: Key("songNameText"),
+          style: TextStyle(fontSize: 20.0, fontStyle: FontStyle.italic)
+        ),
+        Padding(
+          padding: EdgeInsets.symmetric(horizontal: 5.0),
+          child: Text(
+            "by",
+            style: TextStyle(fontSize: 15.0)
+          )
+        ),
+        Text(
+          _example.artistName,
+          key: Key("artistNameText"),
+          style: TextStyle(fontSize: 20.0, fontStyle: FontStyle.italic)
+        )
+      ]
+    );
+  }
+
 
 }
