@@ -75,14 +75,34 @@ class _PlayScreenState extends State<PlayScreen> {
                         mainAxisAlignment: MainAxisAlignment.center,
                         crossAxisAlignment: CrossAxisAlignment.center,
                         children: <Widget>[
-                          Text("$_currentSeconds"),
-                          Text(_word),
-                          RaisedButton(
-                              key: Key("gotItButton"),
-                              onPressed: () {
-                                _advancePlayScreenWithResult(true);
-                              },
-                              child: Text("I got it!")
+                          Padding(
+                            padding: EdgeInsets.fromLTRB(0, 140, 0, 110),
+                            child: Text(
+                              "$_currentSeconds",
+                              style: TextStyle(fontSize: 72, fontFamily: "AmaticSC")
+                            ),
+                          ),
+                          Text(_word, style: TextStyle(fontSize: 72)),
+                          Expanded(child: Container()),
+                          Padding(
+                            padding: EdgeInsets.fromLTRB(0, 0, 0, 63),
+                            child: ButtonTheme(
+                              minWidth: 302,
+                              height: 90,
+                              shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(5)),
+                              buttonColor: Color(0xff335df3),
+                              child: RaisedButton(
+                                onPressed: () {
+                                  _advancePlayScreenWithResult(true);
+                                },
+                                child: Text(
+                                  "I got it!",
+                                  style: TextStyle(fontFamily: "AmaticSC", fontSize: 48,
+                                    fontWeight: FontWeight.w700, color: Colors.white)
+                                ),
+                              )
+                            )
                           )
                         ]))
             )
