@@ -21,39 +21,60 @@ class _SongAssociationHomePageState extends State<SongAssociationHomePage> {
   @override
   Widget build(BuildContext context) {
     return Material(
-      child: Center(
-          child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              crossAxisAlignment: CrossAxisAlignment.center,
-              children: <Widget>[
-                Text(
-                    "Song Bird",
-                  style: TextStyle(fontSize: 24),
-                ),
-                Text(
-                    "Number of Words",
-                  style: TextStyle(fontSize: 24),
-                ),
-                NumPicker(numPickerValue: _wordCountPickerValue),
-                Text(
-                    "Seconds per Word",
-                  style: TextStyle(fontSize: 24),
-                ),
-                NumPicker(numPickerValue: _timePickerValue),
-                RaisedButton(
-                  onPressed: () {
-                    WordController().wordDurationInSeconds = _timePickerValue.value;
-                    WordController().wordCountPerRound = _wordCountPickerValue.value;
-                    WordController().initialize();
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(builder: (context) => PlayScreen())
-                    );
-                  },
-                  child: Text("Start Game!"),
-                )
-              ]
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.center,
+        children: <Widget>[
+          Padding(
+            padding: EdgeInsets.fromLTRB(0, 70, 0, 0),
+            child: Text(
+              "Song Bird",
+              style: TextStyle(fontSize: 48, fontWeight: FontWeight.bold),
+            ),
+          ),
+          Expanded(child: Container()),
+          Column(
+            children: <Widget> [
+              Text(
+                "Number of Words",
+                style: TextStyle(fontSize: 24),
+              ),
+              NumPicker(numPickerValue: _wordCountPickerValue),
+              Text(
+                "Seconds per Word",
+                style: TextStyle(fontSize: 24),
+              ),
+              NumPicker(numPickerValue: _timePickerValue),
+            ]
+
+          ),
+          Expanded(child: Container()),
+          Padding(
+            padding: EdgeInsets.fromLTRB(0, 0, 0, 20),
+            child: ButtonTheme(
+              minWidth: 302,
+              height: 90,
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(5)),
+              buttonColor: Color(0xff335df3),
+              child: RaisedButton(
+                onPressed: () {
+                  WordController().wordDurationInSeconds = _timePickerValue.value;
+                  WordController().wordCountPerRound =
+                    _wordCountPickerValue.value;
+                  WordController().initialize();
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => PlayScreen())
+                  );
+                },
+                child: Text("Play!", style: TextStyle(fontSize: 48,
+                  fontWeight: FontWeight.w700,
+                  color: Colors.white)),
+              )
+            )
           )
+        ]
       )
     );
   }
