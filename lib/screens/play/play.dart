@@ -66,47 +66,47 @@ class _PlayScreenState extends State<PlayScreen> {
   @override
   Widget build(BuildContext context) {
     return WillPopScope(
-        onWillPop: () async => false,
-        child: Material(
-            child: Directionality(
-                textDirection: TextDirection.ltr,
-                child: Center(
-                    child: Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        crossAxisAlignment: CrossAxisAlignment.center,
-                        children: <Widget>[
-                          Padding(
-                            padding: EdgeInsets.fromLTRB(0, 140, 0, 110),
-                            child: Text(
-                              "$_currentSeconds",
-                              style: TextStyle(fontSize: 72, fontFamily: "AmaticSC")
-                            ),
-                          ),
-                          Text(_word, style: TextStyle(fontSize: 72)),
-                          Expanded(child: Container()),
-                          Padding(
-                            padding: EdgeInsets.fromLTRB(0, 0, 0, 63),
-                            child: ButtonTheme(
-                              minWidth: 302,
-                              height: 90,
-                              shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(5)),
-                              buttonColor: Color(0xff335df3),
-                              child: RaisedButton(
-                                onPressed: () {
-                                  _advancePlayScreenWithResult(true);
-                                },
-                                child: Text(
-                                  "I got it!",
-                                  style: TextStyle(fontFamily: "AmaticSC", fontSize: 48,
-                                    fontWeight: FontWeight.w700, color: Colors.white)
-                                ),
-                              )
-                            )
-                          )
-                        ]))
-            )
+      onWillPop: () async => false,
+      child: Material(
+        child: Directionality(
+          textDirection: TextDirection.ltr,
+          child: Center(
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: <Widget>[
+                Padding(
+                  padding: EdgeInsets.fromLTRB(0, 140, 0, 110),
+                  child: Text(
+                    "$_currentSeconds",
+                    style: TextStyle(fontSize: 72, fontFamily: "AmaticSC")
+                  ),
+                ),
+                Text(_word, style: TextStyle(fontSize: 72)),
+                Expanded(child: Container()),
+                Padding(
+                  padding: EdgeInsets.fromLTRB(0, 0, 0, 63),
+                  child: ButtonTheme(
+                    minWidth: 302,
+                    height: 90,
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(5)),
+                    buttonColor: Color(0xff335df3),
+                    child: RaisedButton(
+                      onPressed: () {
+                        _advancePlayScreenWithResult(true);
+                      },
+                      child: Text(
+                        "I got it!",
+                        style: TextStyle(fontFamily: "AmaticSC", fontSize: 48,
+                          fontWeight: FontWeight.w700, color: Colors.white)
+                      ),
+                    )
+                  )
+                )
+              ]))
         )
+      )
     );
   }
 }
