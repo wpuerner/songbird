@@ -1,5 +1,5 @@
-name: songassociation
-description: Song Association
+name: songbird
+description: Try and think of a lyric that uses the word before time runs out. It's harder than you think!
 
 # The following defines the version and build number for your application.
 # A version number is three numbers separated by dots, like 1.2.43
