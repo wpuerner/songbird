@@ -1,18 +1,18 @@
 import 'package:flutter/material.dart';
-import 'package:songassociation/controller/word_controller.dart';
-import 'package:songassociation/model/num_picker_value.dart';
+import 'package:songbird/controller/word_controller.dart';
+import 'package:songbird/model/num_picker_value.dart';
 
 import '../play/play.dart';
 import 'num_picker.dart';
 
-class SongAssociationHomePage extends StatefulWidget {
-  SongAssociationHomePage({Key key}) : super(key: key);
+class HomePage extends StatefulWidget {
+  HomePage({Key key}) : super(key: key);
 
   @override
-  _SongAssociationHomePageState createState() => _SongAssociationHomePageState();
+  _HomePageState createState() => _HomePageState();
 }
 
-class _SongAssociationHomePageState extends State<SongAssociationHomePage> {
+class _HomePageState extends State<HomePage> {
 
   NumPickerValue _timePickerValue = new NumPickerValue(value: 10);
 

@@ -1,9 +1,9 @@
 import 'dart:collection';
 
 import 'package:flutter/material.dart';
-import 'package:songassociation/controller/word_controller.dart';
-import 'package:songassociation/model/word.dart';
-import 'package:songassociation/screens/end/word_result_box.dart';
+import 'package:songbird/controller/word_controller.dart';
+import 'package:songbird/model/word.dart';
+import 'package:songbird/screens/end/word_result_box.dart';
 
 import 'navigation_button_row.dart';
 

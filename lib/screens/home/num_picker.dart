@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
-import 'package:songassociation/model/num_picker_value.dart';
+import 'package:songbird/model/num_picker_value.dart';
 
 class NumPicker extends StatefulWidget {
   NumPicker({Key key, this.numPickerValue}) : super(key: key);

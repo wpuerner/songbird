@@ -3,9 +3,9 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mockito/mockito.dart';
-import 'package:songassociation/controller/word_controller.dart';
-import 'package:songassociation/screens/end/end.dart';
-import 'package:songassociation/screens/play/play.dart';
+import 'package:songbird/controller/word_controller.dart';
+import 'package:songbird/screens/end/end.dart';
+import 'package:songbird/screens/play/play.dart';
 
 import '../../test_utils.dart';
 

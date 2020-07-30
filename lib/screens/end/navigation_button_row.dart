@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:songassociation/controller/word_controller.dart';
-import 'package:songassociation/screens/home/home.dart';
-import 'package:songassociation/screens/play/play.dart';
+import 'package:songbird/controller/word_controller.dart';
+import 'package:songbird/screens/home/home.dart';
+import 'package:songbird/screens/play/play.dart';
 
 class NavigationButtonRow extends StatelessWidget {
 
@@ -29,7 +29,7 @@ class NavigationButtonRow extends StatelessWidget {
               context,
               MaterialPageRoute(
                 builder: (context) =>
-                  SongAssociationHomePage())
+                  HomePage())
             );
           }
         )

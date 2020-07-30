@@ -1,6 +1,6 @@
-import 'package:songassociation/controller/word_controller.dart';
-import 'package:songassociation/controller/word_settings_loader.dart';
-import 'package:songassociation/model/word.dart';
+import 'package:songbird/controller/word_controller.dart';
+import 'package:songbird/controller/word_settings_loader.dart';
+import 'package:songbird/model/word.dart';
 
 import 'controller/word_controller_test.dart';
 

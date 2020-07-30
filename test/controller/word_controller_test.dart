@@ -1,7 +1,7 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:songassociation/controller/word_controller.dart';
-import 'package:songassociation/controller/word_settings_loader.dart';
-import 'package:songassociation/model/word.dart';
+import 'package:songbird/controller/word_controller.dart';
+import 'package:songbird/controller/word_settings_loader.dart';
+import 'package:songbird/model/word.dart';
 
 const MOCK_WORD = "mockWord";
 const MOCK_SONG_NAME = "mockSongName";

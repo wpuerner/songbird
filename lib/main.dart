@@ -27,7 +27,7 @@ class Application extends StatelessWidget {
         primarySwatch: Colors.red,
         fontFamily: 'PlayfairDisplay'
       ),
-      home: SongAssociationHomePage(),
+      home: HomePage(),
     );
   }
 }

@@ -1,8 +1,8 @@
 import 'package:flutter/cupertino.dart';
-import 'package:songassociation/model/word.dart';
+import 'package:songbird/model/word.dart';
 import 'package:flutter/material.dart';
 
-import 'package:songassociation/screens/suggestion/suggestion.dart';
+import 'package:songbird/screens/suggestion/suggestion.dart';
 
 
 class WordResultBox extends StatelessWidget {

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:songassociation/model/word.dart';
+import 'package:songbird/model/word.dart';
 
 class SuggestionScreen extends StatelessWidget {
 

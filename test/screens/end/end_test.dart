@@ -1,9 +1,9 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:songassociation/controller/word_controller.dart';
-import 'package:songassociation/controller/word_settings_loader.dart';
-import 'package:songassociation/model/word.dart';
-import 'package:songassociation/screens/end/end.dart';
-import 'package:songassociation/screens/end/word_result_box.dart';
+import 'package:songbird/controller/word_controller.dart';
+import 'package:songbird/controller/word_settings_loader.dart';
+import 'package:songbird/model/word.dart';
+import 'package:songbird/screens/end/end.dart';
+import 'package:songbird/screens/end/word_result_box.dart';
 
 import '../../test_constants.dart';
 
