@@ -26,10 +26,10 @@ class _SongAssociationHomePageState extends State<SongAssociationHomePage> {
         crossAxisAlignment: CrossAxisAlignment.center,
         children: <Widget>[
           Padding(
-            padding: EdgeInsets.fromLTRB(0, 70, 0, 0),
+            padding: EdgeInsets.fromLTRB(0, 142, 0, 0),
             child: Text(
-              "Song Bird",
-              style: TextStyle(fontSize: 48, fontWeight: FontWeight.bold),
+              "Songbird",
+              style: TextStyle(fontFamily: "AmaticSC", fontSize: 78, fontWeight: FontWeight.bold),
             ),
           ),
           Expanded(child: Container()),
@@ -50,7 +50,7 @@ class _SongAssociationHomePageState extends State<SongAssociationHomePage> {
           ),
           Expanded(child: Container()),
           Padding(
-            padding: EdgeInsets.fromLTRB(0, 0, 0, 20),
+            padding: EdgeInsets.fromLTRB(0, 0, 0, 63),
             child: ButtonTheme(
               minWidth: 302,
               height: 90,
@@ -68,9 +68,11 @@ class _SongAssociationHomePageState extends State<SongAssociationHomePage> {
                     MaterialPageRoute(builder: (context) => PlayScreen())
                   );
                 },
-                child: Text("Play!", style: TextStyle(fontSize: 48,
-                  fontWeight: FontWeight.w700,
-                  color: Colors.white)),
+                child: Text(
+                  "Play!",
+                  style: TextStyle(fontFamily: "AmaticSC", fontSize: 48,
+                  fontWeight: FontWeight.w700, color: Colors.white)
+                ),
               )
             )
           )
