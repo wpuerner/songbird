@@ -11,11 +11,9 @@ class EndScreen extends StatelessWidget {
 
   EndScreen({Key key}) : super(key: key);
 
-  _getTitleText() {
-    return "You got " +
-        WordController().getNumberCorrectForRound().toString() +
-        "/" + WordController().wordCountPerRound.toString() +
-        " correct!";
+  _getNumberCorrectText() {
+    return WordController().getNumberCorrectForRound().toString() +
+        "/" + WordController().wordCountPerRound.toString();
   }
 
   @override
@@ -31,10 +29,20 @@ class EndScreen extends StatelessWidget {
               child:  Column(
                 children: <Widget>[
                   Text(
-                    _getTitleText(),
+                    "You got",
                     textAlign: TextAlign.center,
                     style: TextStyle(
-                      fontSize: 30
+                      fontSize: 30,
+                      fontFamily: "AmaticSC"
+                    )
+                  ),
+                  Text(
+                    _getNumberCorrectText(),
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                      fontSize: 48,
+                      fontFamily: "AmaticSC",
+                      fontWeight: FontWeight.bold
                     )
                   ),
                   Expanded(
