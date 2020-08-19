@@ -32,7 +32,7 @@ class EndScreen extends StatelessWidget {
                     "You got",
                     textAlign: TextAlign.center,
                     style: TextStyle(
-                      fontSize: 30,
+                      fontSize: 40,
                       fontFamily: "AmaticSC"
                     )
                   ),
@@ -40,7 +40,7 @@ class EndScreen extends StatelessWidget {
                     _getNumberCorrectText(),
                     textAlign: TextAlign.center,
                     style: TextStyle(
-                      fontSize: 48,
+                      fontSize: 72,
                       fontFamily: "AmaticSC",
                       fontWeight: FontWeight.bold
                     )
