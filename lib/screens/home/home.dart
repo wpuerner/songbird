@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:songbird/controller/word_controller.dart';
 import 'package:songbird/model/num_picker_value.dart';
+import 'package:songbird/shared/nav-button.dart';
 
 import '../play/play.dart';
 import 'num_picker.dart';
@@ -51,29 +52,21 @@ class _HomePageState extends State<HomePage> {
           Expanded(child: Container()),
           Padding(
             padding: EdgeInsets.fromLTRB(0, 0, 0, 63),
-            child: ButtonTheme(
+            child: NavButton(
+              "Play!",
+                () {
+                WordController().wordDurationInSeconds = _timePickerValue.value;
+                WordController().wordCountPerRound =
+                  _wordCountPickerValue.value;
+                WordController().initialize();
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => PlayScreen())
+                );
+              },
               minWidth: 302,
               height: 90,
-              shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(5)),
-              buttonColor: Color(0xff335df3),
-              child: RaisedButton(
-                onPressed: () {
-                  WordController().wordDurationInSeconds = _timePickerValue.value;
-                  WordController().wordCountPerRound =
-                    _wordCountPickerValue.value;
-                  WordController().initialize();
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => PlayScreen())
-                  );
-                },
-                child: Text(
-                  "Play!",
-                  style: TextStyle(fontFamily: "AmaticSC", fontSize: 48,
-                  fontWeight: FontWeight.w700, color: Colors.white)
-                ),
-              )
+              fontSize: 48
             )
           )
         ]
