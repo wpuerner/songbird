@@ -51,6 +51,7 @@ class EndScreen extends StatelessWidget {
                       children: _constructWordResultBoxList()
                     )
                   ),
+                  Container(height: 20),
                   NavigationButtonRow()
                 ]
               )
