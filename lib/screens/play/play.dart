@@ -3,6 +3,7 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:songbird/controller/word_controller.dart';
 import 'package:songbird/screens/end/end.dart';
+import 'package:songbird/shared/nav-button.dart';
 
 class PlayScreen extends StatefulWidget {
 
@@ -86,22 +87,14 @@ class _PlayScreenState extends State<PlayScreen> {
                 Expanded(child: Container()),
                 Padding(
                   padding: EdgeInsets.fromLTRB(0, 0, 0, 63),
-                  child: ButtonTheme(
+                  child: NavButton(
+                    "I got it!",
+                      () {
+                      _advancePlayScreenWithResult(true);
+                    },
                     minWidth: 302,
                     height: 90,
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(5)),
-                    buttonColor: Color(0xff335df3),
-                    child: RaisedButton(
-                      onPressed: () {
-                        _advancePlayScreenWithResult(true);
-                      },
-                      child: Text(
-                        "I got it!",
-                        style: TextStyle(fontFamily: "AmaticSC", fontSize: 48,
-                          fontWeight: FontWeight.w700, color: Colors.white)
-                      ),
-                    )
+                    fontSize: 48,
                   )
                 )
               ]))
