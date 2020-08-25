@@ -1,0 +1,1354 @@
+{
+  "words": [
+    {
+      "word": "eyes",
+      "examples": [
+        {
+          "songName": "ocean eyes",
+          "artistName": "Billie Eilish"
+        },
+        {
+          "songName": "Behind These Hazel Eyes",
+          "artistName": "Kelly Clarkson"
+        },
+        {
+          "songName": "Pale Blue Eyes",
+          "artistName": "The Velvet Underground"
+        },
+        {
+          "songName": "The Hills",
+          "artistName": "The Weeknd"
+        },
+        {
+          "songName": "Mr. Brightside",
+          "artistName": "The Killers"
+        }
+      ]
+    },
+    {
+      "word": "cold",
+      "examples": [
+        {
+          "songName": "Hot N Cold",
+          "artistName": "Katy Perry"
+        },
+        {
+          "songName": "Cold As You",
+          "artistName": "Taylor Swift"
+        },
+        {
+          "songName": "Jar of Hearts",
+          "artistName": "Christina Perri"
+        },
+        {
+          "songName": "Thrift Shop",
+          "artistName": "Macklemore & Ryan Lewis feat. Wanz"
+        },
+        {
+          "songName": "Hey Ya!",
+          "artistName": "OutKast"
+        }
+      ]
+    },
+    {
+      "word": "smile",
+      "examples": [
+        {
+          "songName": "Smile",
+          "artistName": "Lily Allen"
+        },
+        {
+          "songName": "fake smile",
+          "artistName": "Ariana Grande"
+        },
+        {
+          "songName": "You're Never Fully Dressed Without a Smile",
+          "artistName": "Donald Craig"
+        },
+        {
+          "songName": "Absolutely (Story of a Girl)",
+          "artistName": "Nine Days"
+        },
+        {
+          "songName": "Happier",
+          "artistName": "Marshmello & Bastille"
+        }
+      ]
+    },
+    {
+      "word": "run",
+      "examples": [
+        {
+          "songName": "Run the World (Girls)",
+          "artistName": "Beyoncé"
+        },
+        {
+          "songName": "Run This Town",
+          "artistName": "JAY-Z ft. Kanye West & Rihanna"
+        },
+        {
+          "songName": "Born to Run",
+          "artistName": "Bruce Springsteen"
+        },
+        {
+          "songName": "You Should See Me in a Crown",
+          "artistName": "Billie Eilish"
+        },
+        {
+          "songName": "I Like It",
+          "artistName": "Cardi B, Bad Bunny & J Balvin"
+        }
+      ]
+    },
+    {
+      "word": "hurt",
+      "examples": [
+        {
+          "songName": "Do You Really Want to Hurt Me",
+          "artistName": "Culture Club"
+        },
+        {
+          "songName": "Truth Hurts",
+          "artistName": "Lizzo"
+        },
+        {
+          "songName": "What Hurts the Most",
+          "artistName": "Rascal Flatts"
+        },
+        {
+          "songName": "Pretty Hurts",
+          "artistName": "Beyoncé"
+        },
+        {
+          "songName": "Sorry Not Sorry",
+          "artistName": "Demi Lovato"
+        }
+      ]
+    },
+    {
+      "word": "drive",
+      "examples": [
+        {
+          "songName": "Shut Up and Drive",
+          "artistName": "Rihanna"
+        },
+        {
+          "songName": "(You Drive Me) Crazy",
+          "artistName": "Britney Spears"
+        },
+        {
+          "songName": "Drive My Car",
+          "artistName": "The Beatles"
+        },
+        {
+          "songName": "It Ain't Me",
+          "artistName": "Kygo & Selena Gomez"
+        },
+        {
+          "songName": "Before He Cheats",
+          "artistName": "Carrie Underwood"
+        }
+      ]
+    },
+    {
+      "word": "rule",
+      "examples": [
+        {
+          "songName": "Everybody Wants to Rule the World",
+          "artistName": "Tears for Fears"
+        },
+        {
+          "songName": "New Rules",
+          "artistName": "Dua Lipa"
+        },
+        {
+          "songName": "Lover",
+          "artistName": "Taylor Swift"
+        },
+        {
+          "songName": "Sucker",
+          "artistName": "Jonas Brothers"
+        },
+        {
+          "songName": "Viva La Vida",
+          "artistName": "Coldplay"
+        }
+      ]
+    },
+    {
+      "word": "mine",
+      "examples": [
+        {
+          "songName": "Mine",
+          "artistName": "Taylor Swift"
+        },
+        {
+          "songName": "Mine",
+          "artistName": "Bazzi"
+        },
+        {
+          "songName": "R U Mine?",
+          "artistName": "Arctic Monkeys"
+        },
+        {
+          "songName": "The Hills",
+          "artistName": "The Weeknd"
+        },
+        {
+          "songName": "Attention",
+          "artistName": "Charlie Puth"
+        }
+      ]
+    },
+    {
+      "word": "cry",
+      "examples": [
+        {
+          "songName": "Cry Me a River",
+          "artistName": "Justin Timberlake"
+        },
+        {
+          "songName": "no tears left to cry",
+          "artistName": "Ariana Grande"
+        },
+        {
+          "songName": "No Woman, No Cry",
+          "artistName": "Bob Marley & The Wailers"
+        },
+        {
+          "songName": "Big Girls Don't Cry (Personal)",
+          "artistName": "Fergie"
+        },
+        {
+          "songName": "Cry For Me",
+          "artistName": "Camila Cabello"
+        }
+      ]
+    },
+    {
+      "word": "call",
+      "examples": [
+        {
+          "songName": "Call Your Girlfriend",
+          "artistName": "Robyn"
+        },
+        {
+          "songName": "Hotline Bling",
+          "artistName": "Drake"
+        },
+        {
+          "songName": "Don't Call Me Up",
+          "artistName": "Mabel"
+        },
+        {
+          "songName": "Call Me Maybe",
+          "artistName": "Carly Rae Jepsen"
+        },
+        {
+          "songName": "Brokenhearted",
+          "artistName": "Karmin"
+        }
+      ]
+    },
+    {
+      "word": "back",
+      "examples": [
+        {
+          "songName": "I Want You Back",
+          "artistName": "The Jackson 5"
+        },
+        {
+          "songName": "There's Nothing Holdin' Me Back",
+          "artistName": "Shawn Mendes"
+        },
+        {
+          "songName": "Back to Black",
+          "artistName": "Amy Winehouse"
+        },
+        {
+          "songName": "Baby Got Back",
+          "artistName": "Sir Mix-a-Lot"
+        },
+        {
+          "songName": "Never Going Back Again",
+          "artistName": "Fleetwood Mac"
+        }
+      ]
+    },
+    {
+      "word": "stupid",
+      "examples": [
+        {
+          "songName": "Stupid Girls",
+          "artistName": "P!nk"
+        },
+        {
+          "songName": "Girlfriend",
+          "artistName": "Avril Lavigne"
+        },
+        {
+          "songName": "I Don't Fuck with You",
+          "artistName": "Big Sean"
+        },
+        {
+          "songName": "Smells Like Teen Spirit",
+          "artistName": "Nirvana"
+        },
+        {
+          "songName": "I Will Survive",
+          "artistName": "Gloria Gaynor"
+        }
+      ]
+    },
+    {
+      "word": "kiss",
+      "examples": [
+        {
+          "songName": "Kiss Kiss",
+          "artistName": "Chris Brown ft. T-Pain"
+        },
+        {
+          "songName": "Kiss the Girl",
+          "artistName": "Walt Disney Records"
+        },
+        {
+          "songName": "I Kissed a Girl",
+          "artistName": "Katy Perry"
+        },
+        {
+          "songName": "This Kiss",
+          "artistName": "Faith Hill"
+        },
+        {
+          "songName": "Mr. Brightside",
+          "artistName": "The Killers"
+        }
+      ]
+    },
+    {
+      "word": "party",
+      "examples": [
+        {
+          "songName": "Party in the U.S.A.",
+          "artistName": "Miley Cyrus"
+        },
+        {
+          "songName": "Get the Party Started",
+          "artistName": "P!nk"
+        },
+        {
+          "songName": "Party Rock Anthem",
+          "artistName": "LMFAO"
+        },
+        {
+          "songName": "Surprise Party",
+          "artistName": "Hoodie Allen"
+        },
+        {
+          "songName": "I Don't Care",
+          "artistName": "Ed Sheeran & Justin Bieber"
+        }
+      ]
+    },
+    {
+      "word": "side",
+      "examples": [
+        {
+          "songName": "Side to Side",
+          "artistName": "Ariana Grande ft. Nicki Minaj"
+        },
+        {
+          "songName": "Walk on the Wild Side",
+          "artistName": "Lou Reed"
+        },
+        {
+          "songName": "The Other Side",
+          "artistName": "Jason Derulo"
+        },
+        {
+          "songName": "Hello",
+          "artistName": "Adele"
+        },
+        {
+          "songName": "It Ain't Me",
+          "artistName": "Kygo & Selena Gomez"
+        }
+      ]
+    },
+    {
+      "word": "stranger",
+      "examples": [
+        {
+          "songName": "Stranger",
+          "artistName": "Hilary Duff"
+        },
+        {
+          "songName": "Kissing Strangers",
+          "artistName": "DNCE"
+        },
+        {
+          "songName": "Goodbye Stranger",
+          "artistName": "Supertramp"
+        },
+        {
+          "songName": "Strangers in the Night",
+          "artistName": "Frank Sinatra"
+        },
+        {
+          "songName": "Don't Stop Believin'",
+          "artistName": "Journey"
+        }
+      ]
+    },
+    {
+      "word": "man",
+      "examples": [
+        {
+          "songName": "Piano Man",
+          "artistName": "Billy Joel"
+        },
+        {
+          "songName": "The Man",
+          "artistName": "Taylor Swift"
+        },
+        {
+          "songName": "When I Was Your Man",
+          "artistName": "Bruno Mars"
+        },
+        {
+          "songName": "First Man",
+          "artistName": "Camila Cabello"
+        },
+        {
+          "songName": "Man in the Mirror",
+          "artistName": "Michael Jackson"
+        }
+      ]
+    },
+    {
+      "word": "tonight",
+      "examples": [
+        {
+          "songName": "In the Air Tonight",
+          "artistName": "Phil Collins"
+        },
+        {
+          "songName": "It Ends Tonight",
+          "artistName": "The All-American Rejects"
+        },
+        {
+          "songName": "Can You Feel the Love Tonight",
+          "artistName": "Walt Disney Records"
+        },
+        {
+          "songName": "The Way You Look Tonight",
+          "artistName": "Frank Sinatra"
+        },
+        {
+          "songName": "The Lion Sleeps Tonight",
+          "artistName": "The Tokens"
+        }
+      ]
+    },
+    {
+      "word": "perfect",
+      "examples": [
+        {
+          "songName": "Perfect Day",
+          "artistName": "Hoku"
+        },
+        {
+          "songName": "All of Me",
+          "artistName": "John Legend"
+        },
+        {
+          "songName": "Perfect",
+          "artistName": "One Direction"
+        },
+        {
+          "songName": "Nobody's Perfect",
+          "artistName": "J. Cole ft. Missy Elliott"
+        },
+        {
+          "songName": "Earned It",
+          "artistName": "The Weeknd"
+        }
+      ]
+    },
+    {
+      "word": "baby",
+      "examples": [
+        {
+          "songName": "Baby Got Back",
+          "artistName": "Sir Mix-a-Lot"
+        },
+        {
+          "songName": "...Baby One More Time",
+          "artistName": "Britney Spears"
+        },
+        {
+          "songName": "Ice Ice Baby",
+          "artistName": "Vanilla Ice"
+        },
+        {
+          "songName": "Always Be My Baby",
+          "artistName": "Mariah Carey"
+        },
+        {
+          "songName": "Baby Boy",
+          "artistName": "Beyoncé"
+        }
+      ]
+    },
+    {
+      "word": "belong",
+      "examples": [
+        {
+          "songName": "We Belong Together",
+          "artistName": "Mariah Carey"
+        },
+        {
+          "songName": "You Belong with Me",
+          "artistName": "Taylor Swift"
+        },
+        {
+          "songName": "I Belong to Me",
+          "artistName": "Jessica Simpson"
+        },
+        {
+          "songName": "We Belong",
+          "artistName": "Pat Benatar"
+        },
+        {
+          "songName": "Somewhere I Belong",
+          "artistName": "Linkin Park"
+        }
+      ]
+    },
+    {
+      "word": "horse",
+      "examples": [
+        {
+          "songName": "Dark Horse",
+          "artistName": "Katy Perry"
+        },
+        {
+          "songName": "A Horse With No Name",
+          "artistName": "America"
+        },
+        {
+          "songName": "Black Horse & the Cherry Tree",
+          "artistName": "KT Tunstall"
+        },
+        {
+          "songName": "High Horse",
+          "artistName": "Kacey Musgraves"
+        },
+        {
+          "songName": "Wild Horses",
+          "artistName": "The Rolling Stones"
+        }
+      ]
+    },
+    {
+      "word": "New York",
+      "examples": [
+        {
+          "songName": "New York, I Love You But You're Bringing Me Down",
+          "artistName": "LCD Soundsystem"
+        },
+        {
+          "songName": "New York, New York",
+          "artistName": "Frank Sinatra"
+        },
+        {
+          "songName": "New York State of Mind",
+          "artistName": "Billy Joel"
+        },
+        {
+          "songName": "Welcome to New York",
+          "artistName": "Taylor Swift"
+        },
+        {
+          "songName": "The Only Living Boy in New York",
+          "artistName": "Simon & Garfunkel"
+        }
+      ]
+    },
+    {
+      "word": "breathe",
+      "examples": [
+        {
+          "songName": "Breathe (2 AM)",
+          "artistName": "Anna Nalick"
+        },
+        {
+          "songName": "Breathe Me",
+          "artistName": "Sia"
+        },
+        {
+          "songName": "Breathe Deeper",
+          "artistName": "Tame Impala"
+        },
+        {
+          "songName": "Breathe",
+          "artistName": "Taylor Swift"
+        },
+        {
+          "songName": "Breathe",
+          "artistName": "Lauv"
+        }
+      ]
+    },
+    {
+      "word": "home",
+      "examples": [
+        {
+          "songName": "Hold On, We're Going Home",
+          "artistName": "Drake"
+        },
+        {
+          "songName": "Take Me Home, Country Roads",
+          "artistName": "John Denver"
+        },
+        {
+          "songName": "Sweet Home Alabama",
+          "artistName": "Lynyrd Skynyrd"
+        },
+        {
+          "songName": "Home",
+          "artistName": "Edward Sharpe & The Magnetic Zeros"
+        },
+        {
+          "songName": "Work from Home",
+          "artistName": "Fifth Harmony"
+        }
+      ]
+    },
+    {
+      "word": "day",
+      "examples": [
+        {
+          "songName": "One Day",
+          "artistName": "Matisyahu"
+        },
+        {
+          "songName": "Perfect Day",
+          "artistName": "Hoku"
+        },
+        {
+          "songName": "Bad Day",
+          "artistName": "Daniel Powter"
+        },
+        {
+          "songName": "First Day of My Life",
+          "artistName": "Bright Eyes"
+        },
+        {
+          "songName": "Dog Days Are Over",
+          "artistName": "Florence + The Machine"
+        }
+      ]
+    },
+    {
+      "word": "song",
+      "examples": [
+        {
+          "songName": "Best Song Ever",
+          "artistName": "One Direction"
+        },
+        {
+          "songName": "Your Song",
+          "artistName": "Elton John"
+        },
+        {
+          "songName": "Fight Song",
+          "artistName": "Rachel Platten"
+        },
+        {
+          "songName": "Love Song",
+          "artistName": "Sara Bareilles"
+        },
+        {
+          "songName": "Sky Full of Song",
+          "artistName": "Florence + The Machine"
+        }
+      ]
+    },
+    {
+      "word": "lost",
+      "examples": [
+        {
+          "songName": "Lost",
+          "artistName": "Frank Ocean"
+        },
+        {
+          "songName": "Lost in Japan",
+          "artistName": "Shawn Mendes"
+        },
+        {
+          "songName": "Lost",
+          "artistName": "Chance the Rapper"
+        },
+        {
+          "songName": "I Lost a Friend",
+          "artistName": "FINNEAS"
+        },
+        {
+          "songName": "thank u, next",
+          "artistName": "Ariana Grande"
+        }
+      ]
+    },
+    {
+      "word": "dog",
+      "examples": [
+        {
+          "songName": "Dog Days Are Over",
+          "artistName": "Florence + The Machine"
+        },
+        {
+          "songName": "Who Let the Dogs Out?",
+          "artistName": "Baha Men"
+        },
+        {
+          "songName": "Hound Dog",
+          "artistName": "Elvis Presley"
+        },
+        {
+          "songName": "Take Me to Church",
+          "artistName": "Hosier"
+        },
+        {
+          "songName": "Imma Dog Too",
+          "artistName": "Toni Romiti"
+        }
+      ]
+    },
+    {
+      "word": "cool",
+      "examples": [
+        {
+          "songName": "Cool",
+          "artistName": "Jonas Brothers"
+        },
+        {
+          "songName": "Cool for the Summer",
+          "artistName": "Demi Lovato"
+        },
+        {
+          "songName": "Cool Jerk",
+          "artistName": "The Go-Go's"
+        },
+        {
+          "songName": "Shades of Cool",
+          "artistName": "Lana Del Rey"
+        },
+        {
+          "songName": "Cool",
+          "artistName": "Gwen Stefani"
+        }
+      ]
+    },
+    {
+      "word": "trouble",
+      "examples": [
+        {
+          "songName": "I Knew You Were Trouble",
+          "artistName": "Taylor Swift"
+        },
+        {
+          "songName": "Trouble",
+          "artistName": "Cage the Elephant"
+        },
+        {
+          "songName": "Trouble",
+          "artistName": "J. Cole"
+        },
+        {
+          "songName": "Trouble on My Mind",
+          "artistName": "Pusha T"
+        },
+        {
+          "songName": "Trouble Is a Friend",
+          "artistName": "Lenka"
+        }
+      ]
+    },
+    {
+      "word": "friend",
+      "examples": [
+        {
+          "songName": "I Lost a Friend",
+          "artistName": "FINNEAS"
+        },
+        {
+          "songName": "bury a friend",
+          "artistName": "Billie Eilish"
+        },
+        {
+          "songName": "You've Got a Friend in Me",
+          "artistName": "Randy Newman"
+        },
+        {
+          "songName": "Real Friends",
+          "artistName": "Camila Cabello"
+        },
+        {
+          "songName": "Real Friends",
+          "artistName": "Kanye West ft. Ty Dolla $ign"
+        }
+      ]
+    },
+    {
+      "word": "head",
+      "examples": [
+        {
+          "songName": "in my head",
+          "artistName": "Ariana Grande"
+        },
+        {
+          "songName": "Keep Ya Head Up",
+          "artistName": "2Pac"
+        },
+        {
+          "songName": "Head Over Heels",
+          "artistName": "The Go-Go's"
+        },
+        {
+          "songName": "In Your Head",
+          "artistName": "Eminem"
+        },
+        {
+          "songName": "Hold Ya Head",
+          "artistName": "The Notorious B.I.G."
+        }
+      ]
+    },
+    {
+      "word": "say",
+      "examples": [
+        {
+          "songName": "Say Something",
+          "artistName": "A Great Big World ft. Christina Aguilera"
+        },
+        {
+          "songName": "Whatcha Say",
+          "artistName": "Jason Derulo"
+        },
+        {
+          "songName": "Say My Name",
+          "artistName": "Destiny's Child"
+        },
+        {
+          "songName": "Say Something",
+          "artistName": "Justin Timberlake ft. Chris Stapleton"
+        },
+        {
+          "songName": "Never Say Never",
+          "artistName": "Justin Bieber"
+        }
+      ]
+    },
+    {
+      "word": "woman",
+      "examples": [
+        {
+          "songName": "God is a woman",
+          "artistName": "Ariana Grande"
+        },
+        {
+          "songName": "More Than a Woman",
+          "artistName": "Bee Gees"
+        },
+        {
+          "songName": "When a Man Loves a Woman",
+          "artistName": "Percy Sledge"
+        },
+        {
+          "songName": "No Woman, No Cry",
+          "artistName": "Bob Marley & The Wailers"
+        },
+        {
+          "songName": "Man! I Feel Like a Woman!",
+          "artistName": "Shania Twain"
+        }
+      ]
+    },
+    {
+      "word": "liar",
+      "examples": [
+        {
+          "songName": "Beautiful Liar",
+          "artistName": "Beyoncé ft. Shakira"
+        },
+        {
+          "songName": "Liar",
+          "artistName": "Camila Cabello"
+        },
+        {
+          "songName": "I'm Not Calling You a Liar",
+          "artistName": "Florence + The Machine"
+        },
+        {
+          "songName": "Bad Liar",
+          "artistName": "Imagine Dragons"
+        },
+        {
+          "songName": "Bad Liar",
+          "artistName": "Selena Gomez"
+        }
+      ]
+    },
+    {
+      "word": "easy",
+      "examples": [
+        {
+          "songName": "Easy",
+          "artistName": "Commodores"
+        },
+        {
+          "songName": "Take It Easy",
+          "artistName": "Eagles"
+        },
+        {
+          "songName": "Easy",
+          "artistName": "Camila Cabello"
+        },
+        {
+          "songName": "Easy Street",
+          "artistName": "Charles Strouse"
+        },
+        {
+          "songName": "I Am Easy to Find",
+          "artistName": "The National"
+        }
+      ]
+    },
+    {
+      "word": "blue",
+      "examples": [
+        {
+          "songName": "Blue (Da Ba Dee)",
+          "artistName": "Eiffel 65"
+        },
+        {
+          "songName": "Blue Jeans",
+          "artistName": "Lana Del Rey"
+        },
+        {
+          "songName": "Blue Suede Shoes",
+          "artistName": "Elvis Presley"
+        },
+        {
+          "songName": "Blue Ain't Your Color",
+          "artistName": "Keith Urban"
+        },
+        {
+          "songName": "Someone Like You",
+          "artistName": "Adele"
+        }
+      ]
+    },
+    {
+      "word": "sorry",
+      "examples": [
+        {
+          "songName": "Sorry",
+          "artistName": "Madonna"
+        },
+        {
+          "songName": "Sorry Not Sorry",
+          "artistName": "Demi Lovato"
+        },
+        {
+          "songName": "You're Not Sorry",
+          "artistName": "Taylor Swift"
+        },
+        {
+          "songName": "Sorry",
+          "artistName": "Justin Bieber"
+        },
+        {
+          "songName": "Sorry",
+          "artistName": "Buckcherry"
+        }
+      ]
+    },
+    {
+      "word": "care",
+      "examples": [
+        {
+          "songName": "I Don't Care",
+          "artistName": "Ed Sheeran & Justin Bieber"
+        },
+        {
+          "songName": "Take Care",
+          "artistName": "Drake ft. Rihanna"
+        },
+        {
+          "songName": "I Don't Care",
+          "artistName": "Fall Out Boy"
+        },
+        {
+          "songName": "My Baby Just Cares for Me",
+          "artistName": "Nina Simone"
+        },
+        {
+          "songName": "I Care 4 U",
+          "artistName": "Aaliyah"
+        }
+      ]
+    },
+    {
+      "word": "world",
+      "examples": [
+        {
+          "songName": "What a Wonderful World",
+          "artistName": "Louis Armstrong"
+        },
+        {
+          "songName": "Only Girl (In the World)",
+          "artistName": "Rihanna"
+        },
+        {
+          "songName": "A Whole New World",
+          "artistName": "Walt Disney Records"
+        },
+        {
+          "songName": "The Man Who Sold the World",
+          "artistName": "David Bowie"
+        },
+        {
+          "songName": "City of Stars",
+          "artistName": "Ryan Gosling ft. Emma Stone"
+        }
+      ]
+    },
+    {
+      "word": "born",
+      "examples": [
+        {
+          "songName": "Born to Die",
+          "artistName": "Lana Del Rey"
+        },
+        {
+          "songName": "Born in the U.S.A.",
+          "artistName": "Bruce Springsteen"
+        },
+        {
+          "songName": "Born This Way",
+          "artistName": "Lady Gaga"
+        },
+        {
+          "songName": "Born Again",
+          "artistName": "Saint Motel"
+        },
+        {
+          "songName": "Fresh Prince of Bel-Air",
+          "artistName": "DJ Jazzy Jeff & The Fresh Prince"
+        }
+      ]
+    },
+    {
+      "word": "body",
+      "examples": [
+        {
+          "songName": "Rock Your Body",
+          "artistName": "Justin Timberlake"
+        },
+        {
+          "songName": "Your Body Is a Wonderland",
+          "artistName": "John Mayer"
+        },
+        {
+          "songName": "My Body",
+          "artistName": "Young the Giant"
+        },
+        {
+          "songName": "Talking Body",
+          "artistName": "Tove Lo"
+        },
+        {
+          "songName": "Body",
+          "artistName": "Loud Luxury ft. brando"
+        }
+      ]
+    },
+    {
+      "word": "yesterday",
+      "examples": [
+        {
+          "songName": "Yesterday",
+          "artistName": "The Beatles"
+        },
+        {
+          "songName": "So Yesterday",
+          "artistName": "Hilary Duff"
+        },
+        {
+          "songName": "Lost in Yesterday",
+          "artistName": "Tame Impala"
+        },
+        {
+          "songName": "Just One Yesterday",
+          "artistName": "Fall Out Boy ft. Foxes"
+        },
+        {
+          "songName": "The Kids from Yesterday",
+          "artistName": "My Chemical Romance"
+        }
+      ]
+    },
+    {
+      "word": "rock",
+      "examples": [
+        {
+          "songName": "We Will Rock You",
+          "artistName": "Queen"
+        },
+        {
+          "songName": "Rock the Casbah",
+          "artistName": "The Clash"
+        },
+        {
+          "songName": "Jailhouse Rock",
+          "artistName": "Elvis Presley"
+        },
+        {
+          "songName": "I Love Rock 'N Roll",
+          "artistName": "Joan Jett & The Blackhearts"
+        },
+        {
+          "songName": "Rock with You",
+          "artistName": "Michael Jackson"
+        }
+      ]
+    },
+    {
+      "word": "sugar",
+      "examples": [
+        {
+          "songName": "Sugar",
+          "artistName": "Maroon 5"
+        },
+        {
+          "songName": "Sugar, We're Goin Down",
+          "artistName": "Fall Out Boy"
+        },
+        {
+          "songName": "Pour Some Sugar on Me",
+          "artistName": "Def Leppard"
+        },
+        {
+          "songName": "A Spoonful of Sugar",
+          "artistName": "Julie Andrews"
+        },
+        {
+          "songName": "Suga Suga (So Fly)",
+          "artistName": "Baby Bash ft. Frankie J"
+        }
+      ]
+    },
+    {
+      "word": "fly",
+      "examples": [
+        {
+          "songName": "Fly Me to the Moon",
+          "artistName": "Frank Sinatra"
+        },
+        {
+          "songName": "I'm Like a Bird",
+          "artistName": "Nelly Furtado"
+        },
+        {
+          "songName": "Pretty Fly (For a White Guy)",
+          "artistName": "The Offspring"
+        },
+        {
+          "songName": "Let It Fly",
+          "artistName": "Lil Wayne ft. Travis Scott"
+        },
+        {
+          "songName": "I Believe I Can Fly",
+          "artistName": "R. Kelly"
+        }
+      ]
+    },
+    {
+      "word": "away",
+      "examples": [
+        {
+          "songName": "The One That Got Away",
+          "artistName": "Katy Perry"
+        },
+        {
+          "songName": "Give It Away",
+          "artistName": "Red Hot Chili Peppers"
+        },
+        {
+          "songName": "Come Sail Away",
+          "artistName": "Styx"
+        },
+        {
+          "songName": "Carried Away",
+          "artistName": "Passion Pit"
+        },
+        {
+          "songName": "Slide Away",
+          "artistName": "Miley Cyrus"
+        }
+      ]
+    },
+    {
+      "word": "heaven",
+      "examples": [
+        {
+          "songName": "Locked Out of Heaven",
+          "artistName": "Bruno Mars"
+        },
+        {
+          "songName": "Tears in Heaven",
+          "artistName": "Eric Clapton"
+        },
+        {
+          "songName": "Heaven",
+          "artistName": "Bryan Adams"
+        },
+        {
+          "songName": "Heaven Is a Place on Earth",
+          "artistName": "Belinda Carlisle"
+        },
+        {
+          "songName": "Take Me to Church",
+          "artistName": "Hozier"
+        }
+      ]
+    },
+    {
+      "word": "alone",
+      "examples": [
+        {
+          "songName": "You Are Not Alone",
+          "artistName": "Michael Jackson"
+        },
+        {
+          "songName": "Hold On, We're Going Home",
+          "artistName": "Drake"
+        },
+        {
+          "songName": "Sleep Alone",
+          "artistName": "Two Door Cinema Club"
+        },
+        {
+          "songName": "Never Alone",
+          "artistName": "Tori Kelly ft. Kirk Franklin"
+        },
+        {
+          "songName": "New Rules",
+          "artistName": "Dua Lipa"
+        }
+      ]
+    },
+    {
+      "word": "wild",
+      "examples": [
+        {
+          "songName": "Wild Ones",
+          "artistName": "Flo Rida ft. Sia"
+        },
+        {
+          "songName": "No Church in the Wild",
+          "artistName": "JAY-Z & Kanye West"
+        },
+        {
+          "songName": "Young, Wild & Free",
+          "artistName": "Snoop Dogg & Wiz Khalifa ft. Bruno Mars"
+        },
+        {
+          "songName": "Walk on the Wild Side",
+          "artistName": "Lou Reed"
+        },
+        {
+          "songName": "Wild Horses",
+          "artistName": "The Rolling Stones"
+        }
+      ]
+    },
+    {
+      "word": "young",
+      "examples": [
+        {
+          "songName": "Young and Beautiful",
+          "artistName": "Lana Del Rey"
+        },
+        {
+          "songName": "We Are Young",
+          "artistName": "fun. ft. Janelle Monáe"
+        },
+        {
+          "songName": "When You Were Young",
+          "artistName": "The Killers"
+        },
+        {
+          "songName": "Young Forever",
+          "artistName": "JAY-Z ft. Mr. Hudson"
+        },
+        {
+          "songName": "Young, Wild & Free",
+          "artistName": "Snoop Dogg & Wiz Khalifa ft. Bruno Mars"
+        }
+      ]
+    },
+    {
+      "word": "rain",
+      "examples": [
+        {
+          "songName": "Set Fire to the Rain",
+          "artistName": "Adele"
+        },
+        {
+          "songName": "Purple Rain",
+          "artistName": "Prince and the Revolution"
+        },
+        {
+          "songName": "November Rain",
+          "artistName": "Guns N' Roses"
+        },
+        {
+          "songName": "Have You Ever Seen the Rain?",
+          "artistName": "Creedence Clearwater Revival"
+        },
+        {
+          "songName": "Fire and Rain",
+          "artistName": "James Taylor"
+        }
+      ]
+    },
+    {
+      "word": "before",
+      "examples": [
+        {
+          "songName": "Wake Me Up Before You Go-Go",
+          "artistName": "Wham!"
+        },
+        {
+          "songName": "Before You Go",
+          "artistName": "Lewis Capaldi"
+        },
+        {
+          "songName": "Before He Cheats",
+          "artistName": "Carrie Underwood"
+        },
+        {
+          "songName": "Before I Forget",
+          "artistName": "Slipknot"
+        },
+        {
+          "songName": "To All the Girls I've Loved Before",
+          "artistName": "Julio Iglesias ft. Willie Nelson"
+        }
+      ]
+    }
+  ]
+}
