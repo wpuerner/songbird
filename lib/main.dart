@@ -4,7 +4,7 @@ import 'package:global_configuration/global_configuration.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  await GlobalConfiguration().loadFromAsset("word_settings");
+  await GlobalConfiguration().loadFromAsset("songbird.json");
   runApp(Application());
 }
 
