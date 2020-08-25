@@ -25,9 +25,10 @@ class SuggestionScreen extends StatelessWidget {
     contentWidgetList.add(
       Text(
         word.word,
-        style: TextStyle(fontSize: 30)
+        style: TextStyle(fontSize: 72)
       )
     );
+    contentWidgetList.add(Container(height: 20));
     contentWidgetList.addAll(_constructExampleWidgetList());
 
     return contentWidgetList;
@@ -55,27 +56,30 @@ class ExampleSongAndArtist extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
-      mainAxisAlignment: MainAxisAlignment.center,
-      children: <Widget> [
-        Text(
-          _example.songName,
-          key: Key("songNameText"),
-          style: TextStyle(fontSize: 20.0, fontStyle: FontStyle.italic)
-        ),
-        Padding(
-          padding: EdgeInsets.symmetric(horizontal: 5.0),
-          child: Text(
-            "by",
-            style: TextStyle(fontSize: 15.0)
+    return Padding(
+      padding: EdgeInsets.symmetric(vertical: 5),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: <Widget> [
+          Text(
+            _example.songName,
+            key: Key("songNameText"),
+            style: TextStyle(fontSize: 20.0)
+          ),
+          Padding(
+            padding: EdgeInsets.symmetric(horizontal: 5.0),
+            child: Text(
+              "by",
+              style: TextStyle(fontSize: 20.0, fontStyle: FontStyle.italic)
+            )
+          ),
+          Text(
+            _example.artistName,
+            key: Key("artistNameText"),
+            style: TextStyle(fontSize: 20.0)
           )
-        ),
-        Text(
-          _example.artistName,
-          key: Key("artistNameText"),
-          style: TextStyle(fontSize: 20.0, fontStyle: FontStyle.italic)
-        )
-      ]
+        ]
+      )
     );
   }
 
