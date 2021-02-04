@@ -57,30 +57,37 @@ class ExampleSongAndArtist extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.symmetric(vertical: 5),
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: <Widget> [
-          Text(
-            _example.songName,
-            key: Key("songNameText"),
-            style: TextStyle(fontSize: 20.0)
-          ),
-          Padding(
-            padding: EdgeInsets.symmetric(horizontal: 5.0),
-            child: Text(
-              "by",
-              style: TextStyle(fontSize: 20.0, fontStyle: FontStyle.italic)
+      padding: EdgeInsets.symmetric(vertical: 5, horizontal: 10),
+      child: SingleChildScrollView(
+        scrollDirection: Axis.horizontal,
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: <Widget> [
+            Text(
+              _example.songName,
+              key: Key("songNameText"),
+              style: TextStyle(fontSize: 20.0)
+            ),
+            Padding(
+              padding: EdgeInsets.symmetric(horizontal: 5.0),
+              child: Text(
+                "by",
+                style: TextStyle(fontSize: 20.0, fontStyle: FontStyle.italic)
+              )
+            ),
+            Text(
+              _example.artistName,
+              key: Key("artistNameText"),
+              style: TextStyle(fontSize: 20.0),
+              overflow: TextOverflow.fade,
+              maxLines: 1,
+              softWrap: false
             )
-          ),
-          Text(
-            _example.artistName,
-            key: Key("artistNameText"),
-            style: TextStyle(fontSize: 20.0)
-          )
-        ]
+          ]
+        )
       )
     );
+
   }
 
 
