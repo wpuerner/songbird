@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:songbird/model/word.dart';
+import 'package:songbird/screens/end/end.dart';
+import 'package:songbird/shared/nav-button.dart';
 
 class SuggestionScreen extends StatelessWidget {
 
@@ -13,14 +15,40 @@ class SuggestionScreen extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
-          children: _constructContentWidgetList()
+          children: _constructContentWidgetList() + _constructBackButtonWidget(context)
         )
     );
 
   }
 
+  List<Widget> _constructBackButtonWidget(BuildContext context) {
+    List<Widget> backButtonWidgetList = List();
+
+    backButtonWidgetList.add(
+      Expanded(child: Container())
+    );
+
+    backButtonWidgetList.add(
+      Padding(
+        padding: EdgeInsets.fromLTRB(0, 0, 0, 63),
+        child: NavButton(
+          "Back",
+          () {
+            Navigator.pop(context);
+          }
+        )
+      )
+    );
+
+    return backButtonWidgetList;
+  }
+
   List<Widget> _constructContentWidgetList() {
     List<Widget> contentWidgetList = List();
+
+    contentWidgetList.add(
+      Expanded(child: Container())
+    );
 
     contentWidgetList.add(
       Text(
