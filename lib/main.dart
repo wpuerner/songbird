@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'screens/home/home.dart';
 import 'package:global_configuration/global_configuration.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
+  SystemChrome.setEnabledSystemUIOverlays([]);
   await GlobalConfiguration().loadFromAsset("songbird.json");
   runApp(Application());
 }
