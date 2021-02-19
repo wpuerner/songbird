@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:songbird/controller/word_controller.dart';
 import 'package:songbird/model/num_picker_value.dart';
-import 'package:songbird/shared/nav-button.dart';
+import 'package:songbird/shared/nav_button.dart';
 
 import '../play/play.dart';
 import 'num_picker.dart';
