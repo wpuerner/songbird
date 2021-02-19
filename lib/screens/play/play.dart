@@ -2,8 +2,8 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:songbird/controller/word_controller.dart';
-import 'package:songbird/screens/end/end.dart';
-import 'package:songbird/shared/nav-button.dart';
+import 'package:songbird/screens/transition/transition.dart';
+import 'package:songbird/shared/nav_button.dart';
 
 class PlayScreen extends StatefulWidget {
 
@@ -31,17 +31,10 @@ class _PlayScreenState extends State<PlayScreen> {
 
   void _advancePlayScreenWithResult(bool gotIt) {
     WordController().submitWordResult(gotIt);
-    if (WordController().isNextWordAvailable()) {
-      Navigator.pushReplacement(
-          context,
-          MaterialPageRoute(builder: (context) => PlayScreen())
-      );
-    } else {
-      Navigator.pushReplacement(
-          context,
-          MaterialPageRoute(builder: (context) => EndScreen())
-      );
-    }
+    Navigator.pushReplacement(
+        context,
+        MaterialPageRoute(builder: (context) => TransitionScreen(gotIt: gotIt))
+    );
   }
 
   @override

@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:songbird/controller/word_controller.dart';
 import 'package:songbird/screens/home/home.dart';
 import 'package:songbird/screens/play/play.dart';
-import 'package:songbird/shared/nav-button.dart';
+import 'package:songbird/shared/nav_button.dart';
 
 class NavigationButtonRow extends StatelessWidget {
   @override

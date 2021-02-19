@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:songbird/model/word.dart';
-import 'package:songbird/screens/end/end.dart';
-import 'package:songbird/shared/nav-button.dart';
+import 'package:songbird/shared/nav_button.dart';
 
 class SuggestionScreen extends StatelessWidget {
 
