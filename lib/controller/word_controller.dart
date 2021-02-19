@@ -1,4 +1,5 @@
 import 'dart:collection';
+import 'dart:math';
 
 import 'package:songbird/controller/word_settings_loader.dart';
 
@@ -35,6 +36,7 @@ class WordController {
     wordResultsQueue.clear();
 
     int _m = 0;
+    globalWordList.shuffle();
 
     for (int _i = 0; _i < wordCountPerRound; _i++) {
       if (_m >= globalWordList.length) {
