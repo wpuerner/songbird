@@ -33,7 +33,7 @@ flutter:
   uses-material-design: true
   assets:
     - assets/cfg/
-    - assets/sfx/ding.wav
+    - assets/sfx/ding.mp3
     - assets/sfx/quack.mp3
     - assets/sfx/ticking_clock.mp3
   fonts:

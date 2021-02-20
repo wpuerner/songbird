@@ -18,7 +18,7 @@ class _NumPickerState extends State<NumPicker> {
 
   void _decrementNumValue() {
     setState(() {
-      if (numPickerValue.value > 0) { numPickerValue.value--; }
+      if (numPickerValue.value > 1) { numPickerValue.value--; }
     });
   }
 

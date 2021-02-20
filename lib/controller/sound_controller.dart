@@ -16,7 +16,7 @@ class SoundController {
   static AudioPlayer _player;
 
   void initialize() {
-    _cache.loadAll(["ticking_clock.mp3", "quack.mp3", "ding.wav"]);
+    _cache.loadAll(["ticking_clock.mp3", "quack.mp3", "ding.mp3"]);
   }
 
   void startTicking() async {
@@ -32,7 +32,7 @@ class SoundController {
   }
 
   void ding() {
-    _cache.play("ding.wav");
+    _cache.play("ding.mp3");
   }
 
   void quack() {
