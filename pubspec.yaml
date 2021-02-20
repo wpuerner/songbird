@@ -21,6 +21,7 @@ dependencies:
     sdk: flutter
   cupertino_icons: ^0.1.2
   global_configuration: ^1.5.0
+  audioplayers : ^0.17.3
 
 dev_dependencies:
   flutter_test:
@@ -32,6 +33,9 @@ flutter:
   uses-material-design: true
   assets:
     - assets/cfg/
+    - assets/sfx/ding.wav
+    - assets/sfx/quack.mp3
+    - assets/sfx/ticking_clock.wav
   fonts:
     - family: PlayfairDisplay
       fonts:
