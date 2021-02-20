@@ -1,6 +1,7 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
+import 'package:songbird/controller/sound_controller.dart';
 import 'package:songbird/controller/word_controller.dart';
 import 'package:songbird/screens/transition/transition.dart';
 import 'package:songbird/shared/nav_button.dart';
@@ -27,9 +28,11 @@ class _PlayScreenState extends State<PlayScreen> {
     this._word = WordController().getNextWord();
     this._secondsPerWord = WordController().wordDurationInSeconds;
     this._currentSeconds = this._secondsPerWord;
+    SoundController().startTicking();
   }
 
   void _advancePlayScreenWithResult(bool gotIt) {
+    SoundController().stopTicking();
     WordController().submitWordResult(gotIt);
     Navigator.pushReplacement(
         context,
