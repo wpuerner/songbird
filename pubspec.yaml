@@ -35,7 +35,7 @@ flutter:
     - assets/cfg/
     - assets/sfx/ding.wav
     - assets/sfx/quack.mp3
-    - assets/sfx/ticking_clock.wav
+    - assets/sfx/ticking_clock.mp3
   fonts:
     - family: PlayfairDisplay
       fonts:

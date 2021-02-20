@@ -16,12 +16,12 @@ class SoundController {
   static AudioPlayer _player;
 
   void initialize() {
-    _cache.loadAll(["ticking_clock.wav", "quack.mp3", "ding.wav"]);
+    _cache.loadAll(["ticking_clock.mp3", "quack.mp3", "ding.wav"]);
   }
 
   void startTicking() async {
     if (_player == null) {
-      _player = await _cache.loop("ticking_clock.wav");
+      _player = await _cache.loop("ticking_clock.mp3");
     } else {
       _player.resume();
     }
