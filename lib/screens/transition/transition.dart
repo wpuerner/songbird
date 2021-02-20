@@ -1,6 +1,7 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
+import 'package:songbird/controller/sound_controller.dart';
 import 'package:songbird/controller/word_controller.dart';
 import 'package:songbird/screens/end/end.dart';
 import 'package:songbird/screens/play/play.dart';
@@ -25,6 +26,12 @@ class _TransitionScreenState extends State<TransitionScreen> {
 
   @override
   void initState() {
+    if (_gotIt) {
+      SoundController().ding();
+    } else {
+      SoundController().quack();
+    }
+
     Timer(Duration(seconds: 1), () {
       if (WordController().isNextWordAvailable()) {
         Navigator.pushReplacement(
@@ -44,7 +51,7 @@ class _TransitionScreenState extends State<TransitionScreen> {
   @override
   Widget build(BuildContext context) {
     return Material(
-      color: _gotIt ? Color(0xff335df3) : Colors.deepOrange,
+      color: _gotIt ? Color(0xff335df3) : Colors.red,
       child: Center(
         child: Icon(
           _gotIt ? Icons.check : Icons.clear,
